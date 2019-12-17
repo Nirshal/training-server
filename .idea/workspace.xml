@@ -2,243 +2,454 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_arc_arc_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_gizmo_gizmo_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_arc_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_bootstrap_core_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_builder_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_core_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_core_deployment_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_jsonp_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_jsonp_deployment_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_junit5_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_netty_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_common_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_server_common_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_test_common_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_vertx_core_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_quarkus_vertx_http_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_quarkus_security_quarkus_security_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_json_path_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_common_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_xml_path_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_smallrye_config_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_auth_common_3_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_bridge_common_3_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_core_3_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_web_3_8_3_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_web_common_3_8_3_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_ejb_jakarta_ejb_api_3_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_el_jakarta_el_api_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_enterprise_jakarta_enterprise_cdi_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_interceptor_jakarta_interceptor_api_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_builder_support_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_embedder_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_resolver_provider_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_connector_basic_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_impl_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_spi_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_wagon_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_util_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sling_org_apache_sling_javax_activation_0_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_microprofile_config_microprofile_config_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_microprofile_context_propagation_microprofile_context_propagation_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_plexus_0_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_json_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_graalvm_sdk_graal_sdk_19_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_commons_logging_jboss_logging_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_2_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logmanager_jboss_logmanager_embedded_1_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_core_4_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_core_spi_4_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_slf4j_slf4j_jboss_logging_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_2_1_spec_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_xml_bind_jboss_jaxb_api_2_3_spec_2_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_threads_jboss_threads_3_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_common_wildfly_common_1_5_0_Final_format_001.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile.native" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/TrainingsResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nirshal/NativeTrainingsResourceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nirshal/TrainingsResourceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/nirshal/TrainingsResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/com.fasterxml.jackson.core.jackson-core-2.9.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/com.sun.activation.jakarta.activation-1.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-buffer-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-codec-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-codec-dns-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-codec-http-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-codec-http2-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-codec-socks-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-common-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-handler-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-handler-proxy-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-resolver-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-resolver-dns-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.netty.netty-transport-4.1.42.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.arc.arc-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-arc-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-core-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-netty-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-resteasy-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-resteasy-common-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-resteasy-server-common-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-vertx-core-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.quarkus-vertx-http-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.quarkus.security.quarkus-security-1.0.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.smallrye.smallrye-config-1.3.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.vertx.vertx-auth-common-3.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.vertx.vertx-bridge-common-3.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.vertx.vertx-core-3.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.vertx.vertx-web-3.8.3-01.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/io.vertx.vertx-web-common-3.8.3-01.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.annotation.jakarta.annotation-api-1.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.ejb.jakarta.ejb-api-3.2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.el.jakarta.el-api-3.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.enterprise.jakarta.enterprise.cdi-api-2.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.inject.jakarta.inject-api-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.interceptor.jakarta.interceptor-api-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.transaction.jakarta.transaction-api-1.3.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/jakarta.validation.jakarta.validation-api-2.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.eclipse.microprofile.config.microprofile-config-api-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.eclipse.microprofile.context-propagation.microprofile-context-propagation-api-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.graalvm.sdk.graal-sdk-19.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.logging.jboss-logging-3.3.2.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.logging.jboss-logging-annotations-2.1.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.logmanager.jboss-logmanager-embedded-1.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.resteasy.resteasy-core-4.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.resteasy.resteasy-core-spi-4.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.slf4j.slf4j-jboss-logging-1.2.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec-2.0.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.jboss.threads.jboss-threads-3.0.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.reactivestreams.reactive-streams-1.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.slf4j.slf4j-api-1.7.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/lib/org.wildfly.common.wildfly-common-1.5.0.Final-format-001.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/quarkus/bootstrap/deployment.cp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2019-12-17T10-21-51_965.dumpstream" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nirshal.TrainingsResourceTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.nirshal.TrainingsResourceTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/nirshal/NativeTrainingsResourceIT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/nirshal/TrainingsResourceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/training-server-1.0-SNAPSHOT-runner.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/training-server-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/impl/ActivateRequestContextInterceptor_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ClientProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_ClientProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_ClientProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/wiring-devmode/javax/enterprise/context/control/ActivateRequestContext_Shared_AnnotationLiteral.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/Fit_Lib_Maven_Install.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/allclasses-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/allclasses-noframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AccelerometerDataMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AccelerometerDataMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Activity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityClass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityLevel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivitySubtype.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AnalogWatchfaceLayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntChannelIdMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntChannelIdMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntNetwork.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntRxMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntRxMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntTxMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntTxMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntplusDeviceType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AttitudeStage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AttitudeValidity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AutoActivityDetect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AutoSyncFrequency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AutolapTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Autoscroll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AviationAttitudeMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AviationAttitudeMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BacklightMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BacklightTimeout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BarometerDataMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BarometerDataMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BatteryStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BenchPressExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeLightBeamAngleMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeLightNetworkConfigType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeProfileMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeProfileMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BloodPressureMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BloodPressureMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BodyLocation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Bool.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BpStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferEncoder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedMesgBroadcaster.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedRecordMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedRecordMesgBroadcaster.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedRecordMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CRC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CRC16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CadenceZoneMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CadenceZoneMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CalfRaiseExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraEventMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraEventMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraEventType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraOrientationType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CapabilitiesMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CapabilitiesMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CardioExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CarryExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Checksum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ChopExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ClimbProEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ClimbProMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ClimbProMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CommTimeoutType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ConnectivityCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ConnectivityMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ConnectivityMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoreExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CourseCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CourseMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CourseMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoursePoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoursePointMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoursePointMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CrunchExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CurlExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DateMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DateTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DayOfWeek.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeadliftExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Decode.RETURN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Decode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperDataIdMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperDataIdMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperField.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperFieldDefinition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperFieldDescription.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperFieldDescriptionListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceInfoMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceInfoMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceSettingsMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceSettingsMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DigitalWatchfaceLayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayHeart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayMeasure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayOrientation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayPosition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayPower.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveAlarmMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveAlarmMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveAlarmType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveBacklightMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveGasMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveGasMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveGasStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSettingsMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSettingsMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSummaryMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSummaryMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/EventMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/EventMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/EventType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataConceptConfigurationMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataConceptConfigurationMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataFieldConfigurationMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataFieldConfigurationMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataUnits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDescriptors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDisplayType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdLayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdQualifiers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdScreenConfigurationMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdScreenConfigurationMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExerciseCategory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExerciseTitleMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExerciseTitleMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Factory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FaveroProduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Field.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldBase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldCapabilitiesMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldCapabilitiesMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDefinition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDefinitionBase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDescriptionMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDescriptionMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/File.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCapabilitiesMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCapabilitiesMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCreatorMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCreatorMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileEncoder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileFlags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileIdMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileIdMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Fit.ProtocolVersion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Fit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitBaseType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitBaseUnit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitRuntimeException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitnessEquipmentState.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FlyeExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GarminProduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Gender.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Goal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalRecurrence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalSource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GpsMetadataMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GpsMetadataMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GyroscopeDataMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GyroscopeDataMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HipRaiseExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HipStabilityExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HipSwingExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrZoneCalc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrZoneMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrZoneMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrmProfileMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrmProfileMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrvMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrvMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HyperextensionExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Intensity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/JumpMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/JumpMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Language.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LapMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LapMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LapTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LateralRaiseExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LeftRightBalance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LeftRightBalance100.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LegCurlExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LegRaiseExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LengthMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LengthMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LengthType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LocalDateTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LocalDeviceType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LocaltimeIntoDay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LungeExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MagnetometerDataMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MagnetometerDataMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Manufacturer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MemoGlobMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MemoGlobMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Mesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgBroadcastPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgBroadcaster.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgCapabilitiesMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgCapabilitiesMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgCount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgDefinition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgDefinitionListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgNum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgWithEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgWithEventBroadcaster.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgWithEventListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MessageIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MetZoneMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MetZoneMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringInfoMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringInfoMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringReader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/NmeaSentenceMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/NmeaSentenceMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ObdiiDataMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ObdiiDataMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OhrSettingsMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OhrSettingsMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OlympicLiftExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OneDSensorCalibrationMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OneDSensorCalibrationMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PadMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PadMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PlankExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PlyoExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PowerPhaseType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PowerZoneMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PowerZoneMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Profile.SubFields.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Profile.Type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PullUpExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PushUpExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PwrZoneCalc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RecordMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RecordMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RiderPositionType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RowExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RunExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Schedule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ScheduleMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ScheduleMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SdmProfileMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SdmProfileMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentDeleteStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentFileMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentFileMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentIdMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentIdMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLapMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLapMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLapStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLeaderboardEntryMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLeaderboardEntryMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLeaderboardType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentPointMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentPointMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentSelectionType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SensorType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SessionMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SessionMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SessionTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SetMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SetMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SetType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ShoulderPressExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ShoulderStabilityExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ShrugExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Side.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SitUpExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SlaveDeviceMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SlaveDeviceMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SoftwareMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SoftwareMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SourceType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SpeedZoneMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SpeedZoneMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Sport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SquatExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/StressLevelMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/StressLevelMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/StrokeType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SubField.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SubSport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SupportedExdScreenLayouts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SwimStroke.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Switch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ThreeDSensorCalibrationMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ThreeDSensorCalibrationMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimeIntoDay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimeMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimeZone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimerTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimestampCorrelationMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimestampCorrelationMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TissueModelType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Tone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TotalBodyExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TotalsMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TotalsMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TrainingFileMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TrainingFileMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TricepsExtensionExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TurnType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/UserLocalId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/UserProfileMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/UserProfileMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoClipMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoClipMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoDescriptionMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoDescriptionMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoFrameMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoFrameMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoTitleMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoTitleMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WarmUpExerciseName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WatchfaceMode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WatchfaceSettingsMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WatchfaceSettingsMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WaterType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherAlertMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherAlertMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherConditionsMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherConditionsMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherSevereType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherSeverity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Weight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeightScaleMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeightScaleMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WktStepDuration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WktStepTarget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutCapabilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutEquipment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutHr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutPower.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutSessionMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutSessionMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutStepMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutStepMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ZonesTargetMesg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ZonesTargetMesgListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/CSVReader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/CSVTool.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/CSVWriter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgCSVWriter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgCSVWriterBase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgDataCSVWriter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/DecodeExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/EncodeExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/MonitoringReaderExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/ActivityFileTimeStampTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/FileIdTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/MesgIndexTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/TestTool.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/Tests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/index-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/overview-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/package-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/doc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info/lib/fit.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/docker/mongo-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/DateManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/Semicircles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FIT2TrainingRunDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/TrainingFileDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/TrainingsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nirshal/TrainingsResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nirshal/TrainingsResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quarkus/bootstrap/deployment.cp" beforeDir="false" afterPath="$PROJECT_DIR$/target/quarkus/bootstrap/deployment.cp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nirshal.TrainingsResourceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nirshal.TrainingsResourceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nirshal.TrainingsResourceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nirshal.TrainingsResourceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training-server-1.0-SNAPSHOT-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/training-server-1.0-SNAPSHOT-runner.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/training-server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,14 +460,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1V6XH4itMFztxFwfEw4xoooyKIJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/docker" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nirshal.util.logger" />
+      <recent name="com.nirshal.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util" />
+      <recent name="$PROJECT_DIR$/info" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -281,6 +512,37 @@
       <option name="presentableId" value="Default" />
       <updated>1576574427675</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit before starting.">
+      <created>1576574747403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576574747403</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Commit before starting." />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit before starting." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576577466890">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="306" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576577466890" />
+    <state x="18" y="0" key="CommitChangelistDialog2" timestamp="1576591879043">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="18" y="0" key="CommitChangelistDialog2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576591879043" />
+    <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1576582822173">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="178" y="62" key="Maven.ArtifactSearchDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576582822173" />
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1576582526272">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576582526272" />
   </component>
 </project>

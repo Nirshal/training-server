@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  # MONGODB
+  mongodb:
+    image: mongo:3.6
+    container_name: mongodb
+   # restart: always
+    ports:
+      - '27017:27017'
+    command: mongod --smallfiles --auth
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=admin
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+  # APP
+  training-server:
+    image: quarkus/training-server-jvm
+    container_name: training-server
+    # restart: always
+    ports:
+      - '8080:8080'

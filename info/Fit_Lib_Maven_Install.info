@@ -1,0 +1,7 @@
+This file provides the info in order to make the fit library available in the local
+maven repository.
+Run the following from the terminal, pointing to the fit.jar file:
+
+-----
+ \mvn install:install-file -Dfile=fit.jar -DgroupId=com.garmin -DartifactId=fit -Dversion=21.14.00 -Dpackaging=jar
+-----

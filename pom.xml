@@ -44,6 +44,17 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.10</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.garmin</groupId>
+      <artifactId>fit</artifactId>
+      <version>21.14.00</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -86,7 +97,7 @@
         <plugins>
           <plugin>
             <artifactId>maven-failsafe-plugin</artifactId>
-            <version>${surefire-plugin.version}</version>
+<!--            <version>${surefire-plugin.version}</version>-->
             <executions>
               <execution>
                 <goals>
