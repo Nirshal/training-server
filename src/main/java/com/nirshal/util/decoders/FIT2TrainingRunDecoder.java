@@ -1,8 +1,11 @@
 package com.nirshal.util.decoders;
 
 import com.garmin.fit.*;
+import com.nirshal.model.Training;
 import com.nirshal.util.DateManager;
 import com.nirshal.util.Semicircles;
+import com.nirshal.util.mongodb.MongoCollections;
+import com.nirshal.util.mongodb.MongoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //import org.slf4j.Logger;
@@ -24,8 +27,14 @@ public class FIT2TrainingRunDecoder implements LapMesgListener, FileIdMesgListen
     Decode decode;
     MesgBroadcaster mesgBroadcaster;
 
+    @Inject
+    MongoCollections collections;
+
+    MongoRepository<Training> trainingMongoRepository;
+
     @PostConstruct
     void init(){
+        trainingMongoRepository = collections.getRepositoryFrom(MongoCollections.type.TRAININGS);
         decode = new Decode();
         //decode.skipHeader();        // Use on streams with no header and footer (stream contains FIT defn and data messages only)
         //decode.incompleteStream();  // This suppresses exceptions with unexpected eof (also incorrect crc)
@@ -61,6 +70,7 @@ public class FIT2TrainingRunDecoder implements LapMesgListener, FileIdMesgListen
         {
             decode.read(in, mesgBroadcaster, mesgBroadcaster);
             logger.info("Decoded FIT file ");
+            trainingMongoRepository.upsert(new Training());
         }
     }
 

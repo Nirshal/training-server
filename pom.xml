@@ -55,6 +55,14 @@
       <artifactId>fit</artifactId>
       <version>21.14.00</version>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-mongodb-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jsonb</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -97,7 +105,6 @@
         <plugins>
           <plugin>
             <artifactId>maven-failsafe-plugin</artifactId>
-<!--            <version>${surefire-plugin.version}</version>-->
             <executions>
               <execution>
                 <goals>
