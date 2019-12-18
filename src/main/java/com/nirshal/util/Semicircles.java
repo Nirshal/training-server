@@ -13,6 +13,8 @@ public class Semicircles {
     }
 
     public static Double getDegrees(Integer circles){
+//        System.out.println(circles);
+//        System.out.println(circles.doubleValue());
         return (circles.doubleValue() * SEMICIRCLE_DEGREES.doubleValue())/MAX_INTEGER ;
     }
 }

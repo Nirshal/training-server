@@ -1,14 +1,17 @@
 package com.nirshal.util.decoders;
 
 import com.garmin.fit.*;
+import com.nirshal.model.Lap;
+import com.nirshal.model.Record;
+import com.nirshal.model.Set;
 import com.nirshal.model.Training;
 import com.nirshal.util.DateManager;
 import com.nirshal.util.Semicircles;
 import com.nirshal.util.mongodb.MongoCollections;
 import com.nirshal.util.mongodb.MongoRepository;
+import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-//import org.slf4j.Logger;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
@@ -16,12 +19,12 @@ import javax.inject.Inject;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
 @ApplicationScoped
-public class FIT2TrainingRunDecoder implements LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener {
+@Data
+public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener {
 
-//    @Inject
-//    Logger logger;
     Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
     Decode decode;
@@ -30,23 +33,26 @@ public class FIT2TrainingRunDecoder implements LapMesgListener, FileIdMesgListen
     @Inject
     MongoCollections collections;
 
-    MongoRepository<Training> trainingMongoRepository;
+    MongoRepository<Training> trainingRepository;
+
+    Training training;
 
     @PostConstruct
     void init(){
-        trainingMongoRepository = collections.getRepositoryFrom(MongoCollections.type.TRAININGS);
+        trainingRepository = collections.getRepositoryFrom(Training.class);
         decode = new Decode();
         //decode.skipHeader();        // Use on streams with no header and footer (stream contains FIT defn and data messages only)
         //decode.incompleteStream();  // This suppresses exceptions with unexpected eof (also incorrect crc)
 
         mesgBroadcaster = new MesgBroadcaster(decode);
-        mesgBroadcaster.addListener((LapMesgListener) this);
         mesgBroadcaster.addListener((FileIdMesgListener) this);
+        mesgBroadcaster.addListener((LapMesgListener) this);
         mesgBroadcaster.addListener((SetMesgListener) this);
+        mesgBroadcaster.addListener((RecordMesgListener) this);
     }
 
     void checkFileIntegrity(File file) throws IOException {
-       logger.info("FIT file integrity check...");
+        logger.info("FIT file integrity check...");
         try ( FileInputStream in = new FileInputStream(file) ) {
             if (!decode.checkFileIntegrity(in)) {
                 logger.error("FIT file integrity failed!");
@@ -57,7 +63,7 @@ public class FIT2TrainingRunDecoder implements LapMesgListener, FileIdMesgListen
         }
     }
 
-    public void decode(File file) throws IOException {
+    public Training decode(File file) throws IOException {
         // Perform a decoder reset (this is absolutely needed when
         // an exception occurred decoding previous file)
         decode.nextFile();
@@ -68,131 +74,109 @@ public class FIT2TrainingRunDecoder implements LapMesgListener, FileIdMesgListen
         logger.info("Start Decoding...");
         try ( FileInputStream in = new FileInputStream(file) )
         {
+            training = new Training();
             decode.read(in, mesgBroadcaster, mesgBroadcaster);
             logger.info("Decoded FIT file ");
-            trainingMongoRepository.upsert(new Training());
+            trainingRepository.upsert(training);
+            return training;
         }
     }
 
-    // Get info for intervals from lap messages.
     @Override
-    public void onMesg(LapMesg lapMesg) {
-//        if (training == null) {
-        switch (lapMesg.getSport()){
-            case RUNNING:
-                logger.info("RUNNING");
-//                    this.training = new TrainingRun();
-//                    this.training.setDate(creationDate);
-                break;
-            case SWIMMING:
-                logger.info("SWIMMING");
-//
-//                    this.training = new TrainingSwim();
-//                    this.training.setDate(creationDate);
-                break;
-            case CYCLING:
-                logger.info("CYCLING");
-
-//                    this.training = new TrainingBike();
-//                    this.training.setDate(creationDate);
-                break;
-            case TRAINING:
-                logger.info("TRAINING");
-//
-//                    this.training = new TrainingWorkout();
-//                    this.training.setDate(creationDate);
-                break;
-            default:
-                logger.info("UNKNOWN");
-
-//                    this.training = new TrainingUnknown();
-//                    this.training.setDate(creationDate);
-                break;
-        }
-//        }
-//        Interval interval = new Interval(
-        logger.info( "DISTANCE: " + lapMesg.getTotalDistance() +
-                " TIME: " + lapMesg.getTotalTimerTime());
-//                training.getType());
-//        if (lapMesg.getSport() == Sport.SWIMMING) interval.setSwimStroke(lapMesg.getSwimStroke());
-//        training.add(interval);
+    public void onMesg(LapMesg m) {
+        logger.info(
+                "ADDING LAP: SPORT={}, DISTANCE={}, TIME={} ",
+                m.getSport().name(),
+                m.getTotalDistance(),
+                m.getTotalTimerTime()
+        );
+        training.getLaps().add(
+                new Lap(
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getTimestamp().getTimestamp(), "Europe/Rome"),
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getStartTime().getTimestamp(),"Europe/Rome"),
+                        m.getSport().name(),
+                        m.getTotalDistance() == null ? null : m.getTotalDistance().doubleValue(),
+                        m.getTotalMovingTime() == null ? null : m.getTotalMovingTime().doubleValue(),
+                        m.getTotalTimerTime() == null ? null : m.getTotalTimerTime().doubleValue(),
+                        m.getTotalElapsedTime() == null ? null : m.getTotalElapsedTime().doubleValue(),
+                        m.getAvgCadence() == null ? null : m.getAvgCadence().intValue(),
+                        m.getMaxCadence() == null ? null : m.getMaxCadence().intValue(),
+                        m.getAvgHeartRate() == null ? null : m.getAvgHeartRate().intValue(),
+                        m.getMinHeartRate() == null ? null : m.getMinHeartRate().intValue(),
+                        m.getMaxHeartRate() == null ? null : m.getMaxHeartRate().intValue(),
+                        m.getTotalCalories(),
+                        m.getAvgRunningCadence() == null ? null : m.getAvgRunningCadence().intValue(),
+                        m.getMaxRunningCadence() == null ? null : m.getMaxRunningCadence().intValue(),
+                        m.getAvgSpeed() == null ? null : m.getAvgSpeed().doubleValue(),
+                        m.getMaxSpeed() == null ? null : m.getMaxSpeed().doubleValue(),
+                        m.getAvgStepLength() == null ? null : m.getAvgStepLength().doubleValue(),
+                        m.getStartPositionLat() == null ? null : Semicircles.getDegrees(m.getStartPositionLat()),
+                        m.getEndPositionLat() == null ? null : Semicircles.getDegrees(m.getEndPositionLat()),
+                        m.getStartPositionLong() == null ? null : Semicircles.getDegrees(m.getStartPositionLong()),
+                        m.getEndPositionLong() == null ? null : Semicircles.getDegrees(m.getEndPositionLong()),
+                        m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue()
+                )
+        );
     }
+
     @Override
     public void onMesg(FileIdMesg fileIdMesg) {
-
-//        if (creationDate == null) {
-        logger.info(DateManager.getLocalizedDateTimeFromGarminTimestamp(fileIdMesg.getTimeCreated().getTimestamp(), "Europe/Rome").toString());
-//        }
-//        System.out.println(creationDate);
-    }
-    // TODO: FIX this
-    @Override
-    public void onMesg(SetMesg setMesg) {
-//        if (this.training == null) {
-//            this.training = new TrainingWorkout();
-//            this.training.setDate(creationDate);
-//        }
-        logger.info("---");
-        Integer[] pippo = setMesg.getCategory();
-        Integer[] subpippo = setMesg.getCategorySubtype();
-        if (pippo!=null){
-            for (Integer i: pippo){
-                logger.info(ExerciseCategory.getStringFromValue(i));
-            }
-            if (subpippo!=null){
-                for (Integer i: pippo){
-                    logger.info(i.toString());
-                }
-            }
-
-            logger.info("Tempo: " + setMesg.getDuration());
-            logger.info("Ripetizioni: " + setMesg.getRepetitions());
-            if (setMesg.getWeight() != null && setMesg.getWeight() != 0.0) {
-                logger.info("Peso: " + setMesg.getWeight());
-            }
-//            Interval interval = new Interval(
-//                    setMesg.getRepetitions(),
-//                    setMesg.getDuration(),
-//                    training.getType());
-//            interval.setExercise(ExerciseCategory.getStringFromValue(setMesg.getCategory()[0]));
-//            training.add(interval);
-
-        } else {
-            logger.info("Rec.");
-            logger.info("Tempo: " + setMesg.getDuration());
-//            Interval interval = new Interval(
-//                    0,
-//                    setMesg.getDuration(),
-//                    training.getType());
-//            interval.setExercise("Rec.");
-//            training.add(interval);
-        }
+        training.setCreationDate(DateManager.getLocalizedDateTimeFromGarminTimestamp(fileIdMesg.getTimeCreated().getTimestamp(), "Europe/Rome"));
+        logger.info("File creation date: {}", training.getCreationDate());
     }
 
     @Override
-    public void onMesg(RecordMesg mesg) {
-//            System.out.println("Record:");
+    public void onMesg(SetMesg s) {
 
-//            printValues(mesg, RecordMesg.TimestampFieldNum);
-//            printValues(mesg, RecordMesg.HeartRateFieldNum);
-//            printValues(mesg, RecordMesg.CadenceFieldNum);
-//            printValues(mesg, RecordMesg.DistanceFieldNum);
-//            printValues(mesg, RecordMesg.SpeedFieldNum);
-//            printValues(mesg, RecordMesg.AltitudeFieldNum);
-//            printValues(mesg, RecordMesg.PositionLatFieldNum);
-//            printValues(mesg, RecordMesg.PositionLongFieldNum);
-//            printValues(mesg, RecordMesg.GpsAccuracyFieldNum);
-//
-
+        training.getSets().add(
+                new Set(
+                        SetType.getStringFromValue(s.getSetType()),
+                        (s.getCategory() == null ? null : ExerciseCategory.getStringFromValue(Arrays.asList(s.getCategory()).get(0))),
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(s.getStartTime().getTimestamp(),"Europe/Rome"),
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(s.getTimestamp().getTimestamp(),"Europe/Rome"),
+                        s.getDuration() == null ? null : s.getDuration().doubleValue(),
+                        s.getRepetitions(),
+                        s.getWeight() == null ? null : s.getWeight().doubleValue()
+//                        s.getWeightDisplayUnit() == null ? null : Weight.getStringFromValue(s.getWeightDisplayUnit()) // NOT USED BY GARMIN?
+                )
+        );
         logger.info(
-                "[ " + mesg.getTimestamp() + " ] - "
-                        + mesg.getDistance()/1000 + " Km - "
-                        + mesg.getSpeed() * 3.6 + " Km/h - "
-                        + Semicircles.getDegrees(mesg.getPositionLat())
-                        + " " + Semicircles.getDegrees(mesg.getPositionLong())
+                "ADDING SET: {}",
+                training.getSets().get(training.getSets().size()-1)
+        );
+    }
+
+    @Override
+    public void onMesg(RecordMesg m) {
+
+        logger.info( "ADDING RECORD: [{}] - Distance: {} Km - Speed: {} - Latitude: {} - Longitude: {}",
+                m.getTimestamp(),
+                m.getDistance() == null ? null : m.getDistance()/1000,
+                m.getSpeed() == null ? null : m.getSpeed() * 3.6,
+                m.getPositionLat() == null ? null : Semicircles.getDegrees(m.getPositionLat()),
+                m.getPositionLong() == null ? null : Semicircles.getDegrees(m.getPositionLong())
         );
 
-//            printDeveloperData(mesg);
+        training.getRecords().add(
+                new Record(
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getTimestamp().getTimestamp(),"Europe/Rome"),
+                        m.getDistance() == null ? null : m.getDistance().doubleValue(),
+
+                        m.getSpeed() == null ? null : m.getSpeed().doubleValue(),
+                        m.getEnhancedSpeed() == null ? null : m.getEnhancedSpeed().doubleValue(),
+                        m.getHeartRate() == null ? null : m.getHeartRate().intValue(),
+                        m.getCalories(),
+
+                        m.getCadence() == null ? null : m.getCadence().intValue(),
+                        m.getStepLength() == null ? null : m.getStepLength().doubleValue(),
+
+                        m.getPositionLat() == null ? null : Semicircles.getDegrees(m.getPositionLat()),
+                        m.getPositionLong() == null ? null : Semicircles.getDegrees(m.getPositionLong()),
+                        m.getAltitude() == null ? null : m.getAltitude().doubleValue(),
+                        m.getEnhancedAltitude() == null ? null : m.getEnhancedAltitude().doubleValue(),
+                        m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue()
+                )
+        );
     }
 }
 

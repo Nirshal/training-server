@@ -1,1 +1,17 @@
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoItem.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/model/Training.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/decoders/TrainingFileDecoder.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/Semicircles.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/DateManager.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollections.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/model/Lap.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollectionsIndexesProvider.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoRepositoryCommonQueries.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/FieldConstants.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/Page.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/decoders/FIT2TrainingRunDecoder.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoClientHelperQuarkus.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoItemClass.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/TrainingsResource.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/model/Record.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/training_server/training-server/src/main/java/com/nirshal/util/mongodb/MongoRepository.java

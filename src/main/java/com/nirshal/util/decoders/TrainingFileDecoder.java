@@ -1,7 +1,10 @@
-//package com.nirshal.util.decoders;
-//
-//import com.nirshal.tutorials.training.Training;
-//
-//public interface TrainingFileDecoder {
-//    public Training decode(String filename);
-//}
+package com.nirshal.util.decoders;
+
+import com.nirshal.model.Training;
+
+import java.io.File;
+import java.io.IOException;
+
+public interface TrainingFileDecoder {
+    Training decode(File file) throws IOException;
+}
