@@ -5,17 +5,13 @@ import com.nirshal.model.Lap;
 import com.nirshal.model.Record;
 import com.nirshal.model.Set;
 import com.nirshal.model.Training;
-import com.nirshal.util.DateManager;
-import com.nirshal.util.Semicircles;
-import com.nirshal.util.mongodb.MongoCollections;
-import com.nirshal.util.mongodb.MongoRepository;
+import com.nirshal.util.data.DateManager;
+import com.nirshal.util.data.Semicircles;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,23 +19,17 @@ import java.util.Arrays;
 
 @ApplicationScoped
 @Data
-public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener {
+public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener, LengthMesgListener {
 
     Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
     Decode decode;
     MesgBroadcaster mesgBroadcaster;
 
-    @Inject
-    MongoCollections collections;
-
-    MongoRepository<Training> trainingRepository;
-
     Training training;
 
     @PostConstruct
     void init(){
-        trainingRepository = collections.getRepositoryFrom(Training.class);
         decode = new Decode();
         //decode.skipHeader();        // Use on streams with no header and footer (stream contains FIT defn and data messages only)
         //decode.incompleteStream();  // This suppresses exceptions with unexpected eof (also incorrect crc)
@@ -77,7 +67,6 @@ public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListe
             training = new Training();
             decode.read(in, mesgBroadcaster, mesgBroadcaster);
             logger.info("Decoded FIT file ");
-            trainingRepository.upsert(training);
             return training;
         }
     }
@@ -177,6 +166,13 @@ public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListe
                         m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue()
                 )
         );
+    }
+
+    @Override
+    public void onMesg(LengthMesg l) {
+        System.out.println(LengthType.getStringFromValue(l.getLengthType()));
+        System.out.println(EventType.getStringFromValue(l.getEventType()));
+
     }
 }
 

@@ -1,4 +1,4 @@
-package com.nirshal.util;
+package com.nirshal.util.data;
 
 import java.time.Instant;
 import java.time.LocalDateTime;

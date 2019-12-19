@@ -1,4 +1,4 @@
-package com.nirshal.util;
+package com.nirshal.util.data;
 
 /**
  * Perform coordinates conversion between Circles and Degrees and vice-versal

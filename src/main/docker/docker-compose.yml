@@ -27,5 +27,4 @@ services:
     ports:
       - '8080:8080'
     environment:
-#      quarkus_mongodb_connection-string:
         - quarkus.mongodb.connection-string=mongodb://mongodb:27017/trainings
