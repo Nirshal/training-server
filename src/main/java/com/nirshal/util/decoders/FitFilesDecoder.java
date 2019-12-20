@@ -1,10 +1,7 @@
 package com.nirshal.util.decoders;
 
 import com.garmin.fit.*;
-import com.nirshal.model.Lap;
-import com.nirshal.model.Record;
-import com.nirshal.model.Set;
-import com.nirshal.model.Training;
+import com.nirshal.model.*;
 import com.nirshal.util.data.DateManager;
 import com.nirshal.util.data.Semicircles;
 import lombok.Data;
@@ -19,7 +16,7 @@ import java.util.Arrays;
 
 @ApplicationScoped
 @Data
-public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener, LengthMesgListener {
+public class FitFilesDecoder implements TrainingFileDecoder, LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener, LengthMesgListener {
 
     Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
@@ -34,11 +31,14 @@ public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListe
         //decode.skipHeader();        // Use on streams with no header and footer (stream contains FIT defn and data messages only)
         //decode.incompleteStream();  // This suppresses exceptions with unexpected eof (also incorrect crc)
 
+        // TODO: reactivate these!
         mesgBroadcaster = new MesgBroadcaster(decode);
-        mesgBroadcaster.addListener((FileIdMesgListener) this);
+//        mesgBroadcaster.addListener((FileIdMesgListener) this);
         mesgBroadcaster.addListener((LapMesgListener) this);
-        mesgBroadcaster.addListener((SetMesgListener) this);
-        mesgBroadcaster.addListener((RecordMesgListener) this);
+//        mesgBroadcaster.addListener((SetMesgListener) this);
+//        mesgBroadcaster.addListener((RecordMesgListener) this);
+        mesgBroadcaster.addListener((LengthMesgListener) this);
+
     }
 
     void checkFileIntegrity(File file) throws IOException {
@@ -138,13 +138,13 @@ public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListe
     @Override
     public void onMesg(RecordMesg m) {
 
-        logger.info( "ADDING RECORD: [{}] - Distance: {} Km - Speed: {} - Latitude: {} - Longitude: {}",
-                m.getTimestamp(),
-                m.getDistance() == null ? null : m.getDistance()/1000,
-                m.getSpeed() == null ? null : m.getSpeed() * 3.6,
-                m.getPositionLat() == null ? null : Semicircles.getDegrees(m.getPositionLat()),
-                m.getPositionLong() == null ? null : Semicircles.getDegrees(m.getPositionLong())
-        );
+//        logger.info( "ADDING RECORD: [{}] - Distance: {} Km - Speed: {} - Latitude: {} - Longitude: {}",
+//                m.getTimestamp(),
+//                m.getDistance() == null ? null : m.getDistance()/1000,
+//                m.getSpeed() == null ? null : m.getSpeed() * 3.6,
+//                m.getPositionLat() == null ? null : Semicircles.getDegrees(m.getPositionLat()),
+//                m.getPositionLong() == null ? null : Semicircles.getDegrees(m.getPositionLong())
+//        );
 
         training.getRecords().add(
                 new Record(
@@ -166,13 +166,33 @@ public class FIT2TrainingRunDecoder implements TrainingFileDecoder, LapMesgListe
                         m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue()
                 )
         );
+        logger.info(
+                "ADDING LAP: {}",
+                training.getLaps().get(training.getLaps().size()-1)
+        );
     }
 
     @Override
     public void onMesg(LengthMesg l) {
-        System.out.println(LengthType.getStringFromValue(l.getLengthType()));
-        System.out.println(EventType.getStringFromValue(l.getEventType()));
 
+        training.getLengths().add(
+                new Length(
+                        LengthType.getStringFromValue(l.getLengthType()),
+                        l.getSwimStroke() == null ? null : l.getSwimStroke().toString(),
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(l.getStartTime().getTimestamp(),"Europe/Rome"),
+                        DateManager.getLocalizedDateTimeFromGarminTimestamp(l.getTimestamp().getTimestamp(),"Europe/Rome"),
+                        l.getTotalElapsedTime()  == null? null : l.getTotalElapsedTime().doubleValue(),
+                        l.getTotalTimerTime() == null? null : l.getTotalTimerTime().doubleValue(),
+                        l.getAvgSpeed() == null? null : l.getAvgSpeed().doubleValue(),
+                        l.getAvgSwimmingCadence() == null? null : l.getAvgSwimmingCadence().intValue(),
+                        l.getTotalStrokes(),
+                        l.getTotalCalories()
+                )
+        );
+        logger.info(
+                "ADDING LENGTH: {}",
+                training.getLengths().get(training.getLengths().size()-1)
+        );
     }
 }
 

@@ -11,4 +11,7 @@ public interface TrainingService {
     Training add(File file) throws IOException;
     Training get(String id);
     List<Training> get(Page page);
+    Training update(Training training);
+    Training delete(String trainingId);
+
 }

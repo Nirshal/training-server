@@ -2,37 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/RestConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Length.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Lap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Lap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Set.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/DateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/DateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/Semicircles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/Semicircles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FIT2TrainingRunDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FIT2TrainingRunDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nirshal/TrainingsResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FIT2TrainingRunDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/impl/ActivateRequestContextInterceptor_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/impl/ActivateRequestContextInterceptor_Bean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_Bean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ClientProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_Bean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_ClientProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_Bean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_ClientProxy.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576690179197</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Rationalized code structure&#10;- Created get for single training.&#10;- Created get to fetch a page of trainings.">
+      <created>1576755567765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576755567765</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,7 +144,8 @@
     <MESSAGE value="- Added basic mongodb repository." />
     <MESSAGE value="Excluded .idea directory from git." />
     <MESSAGE value="- Fixed all the stuff related to the decoding.&#10;- Now the code is able to decode the file and put in mongo.&#10;- Fixed the docker-compose.yml in order to have the server connected with Mongo" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixed all the stuff related to the decoding.&#10;- Now the code is able to decode the file and put in mongo.&#10;- Fixed the docker-compose.yml in order to have the server connected with Mongo" />
+    <MESSAGE value="- Rationalized code structure&#10;- Created get for single training.&#10;- Created get to fetch a page of trainings." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Rationalized code structure&#10;- Created get for single training.&#10;- Created get to fetch a page of trainings." />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576577466890">
@@ -164,21 +160,21 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576750172921" />
-    <state x="18" y="0" key="CommitChangelistDialog2" timestamp="1576690178451">
+    <state x="18" y="0" key="CommitChangelistDialog2" timestamp="1576846101975">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="18" y="0" key="CommitChangelistDialog2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576690178451" />
+    <state x="18" y="0" key="CommitChangelistDialog2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576846101975" />
     <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1576582822173">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="178" y="62" key="Maven.ArtifactSearchDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576582822173" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1576690193431">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1576755579399">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576690193431" />
-    <state width="544" height="315" key="javadoc.popup.new" timestamp="1576682073447">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576755579399" />
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1576839173135">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576682073447" />
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1576839173135" />
   </component>
 </project>

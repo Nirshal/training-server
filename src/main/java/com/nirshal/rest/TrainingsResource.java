@@ -29,17 +29,26 @@ public class TrainingsResource {
         logger.info("Received request to fetch training with id={}.", trainingId);
         return trainingService.get(trainingId);
     }
-
     @GET
     @Path("/list")
     public List<Training> get(@BeanParam @Valid  Page page) {
         logger.info("Received request to fetch trainings page={}.", page);
         return trainingService.get(page);
     }
-
     @POST
     public Training add(File file) throws IOException, FitRuntimeException {
         logger.info("Received request to add a file.");
         return trainingService.add(file);
     }
+    @PUT
+    public Training update(Training training){
+        logger.info("Received request to update a training.");
+        return trainingService.update(training);
+    }
+    @DELETE
+    public Training update(@QueryParam(RestConstants.TRAINING_ID) String trainingId){
+        logger.info("Received request to delete a training.");
+        return trainingService.delete(trainingId);
+    }
+
 }
