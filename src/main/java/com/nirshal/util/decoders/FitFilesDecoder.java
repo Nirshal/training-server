@@ -16,7 +16,21 @@ import java.util.Arrays;
 
 @ApplicationScoped
 @Data
-public class FitFilesDecoder implements TrainingFileDecoder, LapMesgListener, FileIdMesgListener, SetMesgListener, RecordMesgListener, LengthMesgListener {
+public class FitFilesDecoder
+        implements
+        TrainingFileDecoder,
+        LapMesgListener,
+        FileIdMesgListener,
+        SetMesgListener,
+        RecordMesgListener,
+        LengthMesgListener,
+        EventMesgListener,
+        AccelerometerDataMesgListener,
+        ExerciseTitleMesgListener,
+        ActivityMesgListener,
+        MesgDefinitionListener,
+        SessionMesgListener
+{
 
     Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
@@ -33,11 +47,24 @@ public class FitFilesDecoder implements TrainingFileDecoder, LapMesgListener, Fi
 
         // TODO: reactivate these!
         mesgBroadcaster = new MesgBroadcaster(decode);
-//        mesgBroadcaster.addListener((FileIdMesgListener) this);
+        mesgBroadcaster.addListener((FileIdMesgListener) this);
         mesgBroadcaster.addListener((LapMesgListener) this);
-//        mesgBroadcaster.addListener((SetMesgListener) this);
-//        mesgBroadcaster.addListener((RecordMesgListener) this);
+        mesgBroadcaster.addListener((SetMesgListener) this);
+        mesgBroadcaster.addListener((RecordMesgListener) this);
         mesgBroadcaster.addListener((LengthMesgListener) this);
+//        mesgBroadcaster.addListener((EventMesgListener) this);
+//        mesgBroadcaster.addListener((AccelerometerDataMesgListener) this);
+//        mesgBroadcaster.addListener((ExerciseTitleMesgListener) this);
+//        mesgBroadcaster.addListener((ActivityMesgListener) this);
+//        mesgBroadcaster.addListener((MesgDefinitionListener) this);
+//        mesgBroadcaster.addListener((SessionMesgListener) this);
+
+
+
+
+
+
+
 
     }
 
@@ -112,6 +139,18 @@ public class FitFilesDecoder implements TrainingFileDecoder, LapMesgListener, Fi
     public void onMesg(FileIdMesg fileIdMesg) {
         training.setCreationDate(DateManager.getLocalizedDateTimeFromGarminTimestamp(fileIdMesg.getTimeCreated().getTimestamp(), "Europe/Rome"));
         logger.info("File creation date: {}", training.getCreationDate());
+
+        // TODO: this can be used to check the file type (only ACTIVITY should be allowed!)
+        logger.info(com.garmin.fit.File.getStringFromValue(fileIdMesg.getType()));
+
+        logger.info(fileIdMesg.getProductName());
+        logger.info(fileIdMesg.getProduct().toString());
+        logger.info(fileIdMesg.getName());
+        logger.info(GarminProduct.getStringFromValue(fileIdMesg.getGarminProduct()));
+        logger.info(fileIdMesg.getSerialNumber().toString());
+
+
+
     }
 
     @Override
@@ -193,6 +232,52 @@ public class FitFilesDecoder implements TrainingFileDecoder, LapMesgListener, Fi
                 "ADDING LENGTH: {}",
                 training.getLengths().get(training.getLengths().size()-1)
         );
+    }
+
+    @Override
+    public void onMesg(AccelerometerDataMesg accelerometerDataMesg) {
+        System.out.println("AccelerometerDataMesg");
+        // TODO: remove, not used!
+    }
+
+    @Override
+    public void onMesg(EventMesg eventMesg) {
+        System.out.println("EventMesg");
+        // TODO: complete this!
+
+    }
+
+    @Override
+    public void onMesg(ExerciseTitleMesg exerciseTitleMesg) {
+        System.out.println("ExerciseTitleMesg");
+        // TODO: remove, not used!
+    }
+
+    @Override
+    public void onMesg(ActivityMesg activityMesg) {
+        System.out.println("ActivityMesg");
+        System.out.println(Activity.getStringFromValue(activityMesg.getType()));
+        System.out.println(Event.getStringFromValue(activityMesg.getEvent()));
+        System.out.println(EventType.getStringFromValue(activityMesg.getEventType()));
+        System.out.println("---");
+        // TODO: complete this!
+
+
+    }
+
+    @Override
+    public void onMesgDefinition(MesgDefinition mesgDefinition) {
+        System.out.println("MesgDefinition");
+        // TODO: remove, not used!
+    }
+
+    @Override
+    public void onMesg(SessionMesg sessionMesg) {
+        System.out.println("SessionMesg");
+        System.out.println(sessionMesg.getSport());
+        System.out.println("---");
+        // TODO: complete this, is is full of infos!!!
+
     }
 }
 
