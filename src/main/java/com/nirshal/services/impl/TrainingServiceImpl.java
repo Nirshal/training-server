@@ -33,7 +33,7 @@ public class TrainingServiceImpl implements TrainingService {
         Training decodedTraining = decoder.decode(file);
         logger.info("Saving decoded file in the repository.");
         // TODO: de-comment this to re-enable repo save.
-        //        trainingRepository.getRepo().upsert(decodedTraining);
+                trainingRepository.getRepo().upsert(decodedTraining);
 
         return decodedTraining;
     }

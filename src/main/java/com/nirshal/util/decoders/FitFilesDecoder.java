@@ -45,26 +45,20 @@ public class FitFilesDecoder
         //decode.skipHeader();        // Use on streams with no header and footer (stream contains FIT defn and data messages only)
         //decode.incompleteStream();  // This suppresses exceptions with unexpected eof (also incorrect crc)
 
-        // TODO: reactivate these!
         mesgBroadcaster = new MesgBroadcaster(decode);
         mesgBroadcaster.addListener((FileIdMesgListener) this);
         mesgBroadcaster.addListener((LapMesgListener) this);
         mesgBroadcaster.addListener((SetMesgListener) this);
         mesgBroadcaster.addListener((RecordMesgListener) this);
         mesgBroadcaster.addListener((LengthMesgListener) this);
+        mesgBroadcaster.addListener((SessionMesgListener) this);
+
+//        NOT IMPLEMENTED:
 //        mesgBroadcaster.addListener((EventMesgListener) this);
 //        mesgBroadcaster.addListener((AccelerometerDataMesgListener) this);
 //        mesgBroadcaster.addListener((ExerciseTitleMesgListener) this);
 //        mesgBroadcaster.addListener((ActivityMesgListener) this);
 //        mesgBroadcaster.addListener((MesgDefinitionListener) this);
-//        mesgBroadcaster.addListener((SessionMesgListener) this);
-
-
-
-
-
-
-
 
     }
 
@@ -137,19 +131,19 @@ public class FitFilesDecoder
 
     @Override
     public void onMesg(FileIdMesg fileIdMesg) {
+
+        // TODO: this can be used to check the file type (only ACTIVITY should be allowed!)
+        logger.info("FIT file type = {}.", com.garmin.fit.File.getStringFromValue(fileIdMesg.getType()));
+
         training.setCreationDate(DateManager.getLocalizedDateTimeFromGarminTimestamp(fileIdMesg.getTimeCreated().getTimestamp(), "Europe/Rome"));
         logger.info("File creation date: {}", training.getCreationDate());
 
-        // TODO: this can be used to check the file type (only ACTIVITY should be allowed!)
-        logger.info(com.garmin.fit.File.getStringFromValue(fileIdMesg.getType()));
-
-        logger.info(fileIdMesg.getProductName());
-        logger.info(fileIdMesg.getProduct().toString());
-        logger.info(fileIdMesg.getName());
-        logger.info(GarminProduct.getStringFromValue(fileIdMesg.getGarminProduct()));
-        logger.info(fileIdMesg.getSerialNumber().toString());
-
-
+        Device device = new Device(
+                GarminProduct.getStringFromValue(fileIdMesg.getGarminProduct()),
+                fileIdMesg.getSerialNumber()
+        );
+        training.setDevice(device);
+        logger.info("Device used: {}", training.getDevice());
 
     }
 
@@ -177,13 +171,13 @@ public class FitFilesDecoder
     @Override
     public void onMesg(RecordMesg m) {
 
-//        logger.info( "ADDING RECORD: [{}] - Distance: {} Km - Speed: {} - Latitude: {} - Longitude: {}",
-//                m.getTimestamp(),
-//                m.getDistance() == null ? null : m.getDistance()/1000,
-//                m.getSpeed() == null ? null : m.getSpeed() * 3.6,
-//                m.getPositionLat() == null ? null : Semicircles.getDegrees(m.getPositionLat()),
-//                m.getPositionLong() == null ? null : Semicircles.getDegrees(m.getPositionLong())
-//        );
+        logger.info( "ADDING RECORD: [{}] - Distance: {} Km - Speed: {} - Latitude: {} - Longitude: {}",
+                m.getTimestamp(),
+                m.getDistance() == null ? null : m.getDistance()/1000,
+                m.getSpeed() == null ? null : m.getSpeed() * 3.6,
+                m.getPositionLat() == null ? null : Semicircles.getDegrees(m.getPositionLat()),
+                m.getPositionLong() == null ? null : Semicircles.getDegrees(m.getPositionLong())
+        );
 
         training.getRecords().add(
                 new Record(
@@ -204,10 +198,6 @@ public class FitFilesDecoder
                         m.getEnhancedAltitude() == null ? null : m.getEnhancedAltitude().doubleValue(),
                         m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue()
                 )
-        );
-        logger.info(
-                "ADDING LAP: {}",
-                training.getLaps().get(training.getLaps().size()-1)
         );
     }
 
@@ -236,48 +226,50 @@ public class FitFilesDecoder
 
     @Override
     public void onMesg(AccelerometerDataMesg accelerometerDataMesg) {
-        System.out.println("AccelerometerDataMesg");
-        // TODO: remove, not used!
+        // Not used!
     }
 
     @Override
     public void onMesg(EventMesg eventMesg) {
-        System.out.println("EventMesg");
-        // TODO: complete this!
-
+        // We skip this implementation now. It is not easy to decipher.
     }
 
     @Override
     public void onMesg(ExerciseTitleMesg exerciseTitleMesg) {
-        System.out.println("ExerciseTitleMesg");
-        // TODO: remove, not used!
+        // Not used!
     }
 
     @Override
     public void onMesg(ActivityMesg activityMesg) {
-        System.out.println("ActivityMesg");
-        System.out.println(Activity.getStringFromValue(activityMesg.getType()));
-        System.out.println(Event.getStringFromValue(activityMesg.getEvent()));
-        System.out.println(EventType.getStringFromValue(activityMesg.getEventType()));
-        System.out.println("---");
-        // TODO: complete this!
-
-
+        // This message type contains information on the number of sessions
+        // and it's useful to parse multi-sport activities.
+        // At the moment we don't implement this.
     }
 
     @Override
     public void onMesgDefinition(MesgDefinition mesgDefinition) {
-        System.out.println("MesgDefinition");
-        // TODO: remove, not used!
+        // Not used!
     }
 
     @Override
     public void onMesg(SessionMesg sessionMesg) {
-        System.out.println("SessionMesg");
-        System.out.println(sessionMesg.getSport());
-        System.out.println("---");
-        // TODO: complete this, it is full of infos!!!
 
+        training.setSport(sessionMesg.getSport().toString());
+        training.setStartTime(DateManager.getLocalizedDateTimeFromGarminTimestamp(sessionMesg.getStartTime().getTimestamp(),"Europe/Rome"));
+        training.setTotalTime(sessionMesg.getTotalTimerTime().intValue());
+        training.setTotalDistance(sessionMesg.getTotalDistance().intValue());
+        training.setTotalCalories(sessionMesg.getTotalCalories());
+        training.setAvgSpeed(sessionMesg.getEnhancedAvgSpeed().doubleValue());
+
+        logger.info(
+                "ADDING SESSION INFO: SPORT={}, DISTANCE={}, TIME={}, DATE={}, CALORIES={}, SPEED={} ",
+                training.getSport(),
+                training.getTotalDistance(),
+                training.getTotalTime(),
+                training.getStartTime(),
+                training.getTotalCalories(),
+                training.getAvgSpeed()
+        );
     }
 }
 

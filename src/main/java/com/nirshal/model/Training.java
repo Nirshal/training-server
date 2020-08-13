@@ -14,12 +14,20 @@ public class Training implements MongoItem {
 
     public static final String SWIM_STROKE_NONE = "NONE";
 
-    String id;
-    LocalDateTime creationDate;
+    private String id;
+    private String sport;
+    private LocalDateTime creationDate;
+    private LocalDateTime startTime;
+    private Integer totalTime; // in seconds
+    private Integer totalDistance; // in meters
+    private Integer totalCalories;
+    private Double avgSpeed; // [m/s]
 
-    List<Lap> laps = new ArrayList<>();
-    List<Record> records = new ArrayList<>();
-    List<Set> sets = new ArrayList<>();
-    List<Length> lengths = new ArrayList<>();
+    private Device device;
+
+    private List<Lap> laps = new ArrayList<>();
+    private List<Record> records = new ArrayList<>();
+    private List<Set> sets = new ArrayList<>();
+    private List<Length> lengths = new ArrayList<>();
 
 }

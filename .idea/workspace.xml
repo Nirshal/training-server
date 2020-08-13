@@ -23,433 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/Fit_Lib_Maven_Install.info" beforeDir="false" afterPath="$PROJECT_DIR$/info/Fit_Lib_Maven_Install.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AccelerometerDataMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AccelerometerDataMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Activity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityClass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityLevel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivitySubtype.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ActivityType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AnalogWatchfaceLayout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntChannelIdMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntChannelIdMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntNetwork.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntRxMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntRxMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntTxMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntTxMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AntplusDeviceType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AttitudeStage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AttitudeValidity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AutoActivityDetect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AutoSyncFrequency.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AutolapTrigger.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Autoscroll.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AviationAttitudeMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/AviationAttitudeMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BacklightMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BacklightTimeout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BarometerDataMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BarometerDataMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BatteryStatus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BenchPressExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeLightBeamAngleMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeLightNetworkConfigType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeProfileMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BikeProfileMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BloodPressureMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BloodPressureMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BodyLocation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Bool.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BpStatus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferEncoder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedMesgBroadcaster.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedRecordMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedRecordMesgBroadcaster.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/BufferedRecordMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CRC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CRC16.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CadenceZoneMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CadenceZoneMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CalfRaiseExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraEventMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraEventMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraEventType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CameraOrientationType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CapabilitiesMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CapabilitiesMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CardioExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CarryExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Checksum.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ChopExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ClimbProEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ClimbProMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ClimbProMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CommTimeoutType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ConnectivityCapabilities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ConnectivityMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ConnectivityMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoreExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CourseCapabilities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CourseMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CourseMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoursePoint.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoursePointMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CoursePointMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CrunchExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/CurlExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DateMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DateTime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DayOfWeek.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeadliftExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Decode.RETURN.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Decode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperDataIdMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperDataIdMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperField.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperFieldDefinition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperFieldDescription.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeveloperFieldDescriptionListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceIndex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceInfoMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceInfoMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceSettingsMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DeviceSettingsMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DigitalWatchfaceLayout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayHeart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayMeasure.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayOrientation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayPosition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DisplayPower.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveAlarmMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveAlarmMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveAlarmType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveBacklightMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveGasMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveGasMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveGasStatus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSettingsMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSettingsMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSummaryMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/DiveSummaryMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Event.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/EventMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/EventMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/EventType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataConceptConfigurationMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataConceptConfigurationMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataFieldConfigurationMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataFieldConfigurationMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDataUnits.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDescriptors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdDisplayType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdLayout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdQualifiers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdScreenConfigurationMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExdScreenConfigurationMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExerciseCategory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExerciseTitleMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ExerciseTitleMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Factory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FaveroProduct.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Field.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldBase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldCapabilitiesMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldCapabilitiesMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldComponent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDefinition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDefinitionBase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDescriptionMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FieldDescriptionMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/File.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCapabilitiesMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCapabilitiesMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCreatorMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileCreatorMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileEncoder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileFlags.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileIdMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileIdMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FileUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Fit.ProtocolVersion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Fit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitBaseType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitBaseUnit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitRuntimeException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FitnessEquipmentState.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/FlyeExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GarminProduct.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Gender.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Goal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalRecurrence.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GoalSource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GpsMetadataMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GpsMetadataMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GyroscopeDataMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/GyroscopeDataMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HipRaiseExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HipStabilityExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HipSwingExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrZoneCalc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrZoneMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrZoneMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrmProfileMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrmProfileMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrvMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HrvMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/HyperextensionExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Intensity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/JumpMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/JumpMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Language.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LanguageBits4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LapMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LapMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LapTrigger.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LateralRaiseExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LeftRightBalance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LeftRightBalance100.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LegCurlExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LegRaiseExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LengthMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LengthMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LengthType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LocalDateTime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LocalDeviceType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LocaltimeIntoDay.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/LungeExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MagnetometerDataMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MagnetometerDataMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Manufacturer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MemoGlobMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MemoGlobMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Mesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgBroadcastPlugin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgBroadcaster.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgCapabilitiesMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgCapabilitiesMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgCount.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgDefinition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgDefinitionListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgNum.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgWithEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgWithEventBroadcaster.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MesgWithEventListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MessageIndex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MetZoneMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MetZoneMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringInfoMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringInfoMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/MonitoringReader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/NmeaSentenceMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/NmeaSentenceMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ObdiiDataMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ObdiiDataMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OhrSettingsMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OhrSettingsMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OlympicLiftExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OneDSensorCalibrationMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/OneDSensorCalibrationMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PadMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PadMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PlankExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PlyoExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PowerPhaseType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PowerZoneMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PowerZoneMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Profile.SubFields.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Profile.Type.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PullUpExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PushUpExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/PwrZoneCalc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RecordMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RecordMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RiderPositionType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RowExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/RunExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Schedule.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ScheduleMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ScheduleMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SdmProfileMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SdmProfileMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentDeleteStatus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentFileMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentFileMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentIdMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentIdMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLapMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLapMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLapStatus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLeaderboardEntryMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLeaderboardEntryMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentLeaderboardType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentPointMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentPointMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SegmentSelectionType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SensorType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SessionMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SessionMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SessionTrigger.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SetMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SetMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SetType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ShoulderPressExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ShoulderStabilityExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ShrugExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Side.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SitUpExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SlaveDeviceMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SlaveDeviceMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SoftwareMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SoftwareMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SourceType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SpeedZoneMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SpeedZoneMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Sport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportBits6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SportMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SquatExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/StressLevelMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/StressLevelMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/StrokeType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SubField.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SubSport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SupportedExdScreenLayouts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/SwimStroke.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Switch.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ThreeDSensorCalibrationMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ThreeDSensorCalibrationMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimeIntoDay.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimeMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimeZone.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimerTrigger.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimestampCorrelationMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TimestampCorrelationMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TissueModelType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Tone.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TotalBodyExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TotalsMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TotalsMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TrainingFileMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TrainingFileMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TricepsExtensionExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/TurnType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/UserLocalId.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/UserProfileMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/UserProfileMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoClipMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoClipMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoDescriptionMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoDescriptionMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoFrameMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoFrameMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoTitleMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/VideoTitleMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WarmUpExerciseName.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WatchfaceMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WatchfaceSettingsMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WatchfaceSettingsMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WaterType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherAlertMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherAlertMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherConditionsMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherConditionsMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherSevereType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherSeverity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeatherStatus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/Weight.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeightScaleMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WeightScaleMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WktStepDuration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WktStepTarget.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutCapabilities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutEquipment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutHr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutPower.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutSessionMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutSessionMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutStepMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/WorkoutStepMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ZonesTargetMesg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/ZonesTargetMesgListener.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/CSVReader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/CSVTool.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/CSVWriter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgCSVWriter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgCSVWriterBase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgDataCSVWriter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/MesgFilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/csv/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/DecodeExample.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/EncodeExample.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/MonitoringReaderExample.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/examples/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/ActivityFileTimeStampTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/FileIdTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/MesgIndexTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/TestTool.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/Tests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/com/garmin/fit/test/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/index-all.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/overview-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/serialized-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/doc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/lib/fit.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Lap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Lap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Set.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/arc/runtime/LifecycleEventRunner_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/core/runtime/VertxCoreProducer_ProducerMethod_vertx_c3372c086117ae1666bc66dfa7ac379ab76c5253_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/CurrentVertxRequest_ProducerMethod_getCurrent_6dc23d16d53ba5c34e1e7b6f54290fd7b9aebd76_ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_Bean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wiring-devmode/io/quarkus/vertx/http/runtime/RouterProducer_ProducerMethod_produceRouter_47a03b0c0aa0db1a64462fa81c394956a357811a_ClientProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -508,6 +99,22 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/docker" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Quarkus" type="Remote">
+      <module name="training-server" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -604,9 +211,80 @@
     <option name="LAST_COMMIT_MESSAGE" value="- Consolidating data decoding from file." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318935106">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597318935106" />
+    <state x="464" y="173" key="#xdebugger.evaluate" timestamp="1597331853455">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="464" y="173" key="#xdebugger.evaluate/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597331853455" />
+    <state width="1238" height="172" key="GridCell.Tab.0.bottom" timestamp="1597333654370">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333654370" />
+    <state width="1238" height="172" key="GridCell.Tab.0.center" timestamp="1597333654366">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.0.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333654366" />
+    <state width="1238" height="172" key="GridCell.Tab.0.left" timestamp="1597333654365">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.0.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333654365" />
+    <state width="1238" height="172" key="GridCell.Tab.0.right" timestamp="1597333654368">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.0.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333654368" />
+    <state width="1238" height="172" key="GridCell.Tab.1.bottom" timestamp="1597333658085">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.1.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333658085" />
+    <state width="1238" height="172" key="GridCell.Tab.1.center" timestamp="1597333658083">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.1.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333658083" />
+    <state width="1238" height="172" key="GridCell.Tab.1.left" timestamp="1597333658082">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.1.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333658082" />
+    <state width="1238" height="172" key="GridCell.Tab.1.right" timestamp="1597333658084">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="172" key="GridCell.Tab.1.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333658084" />
+    <state x="228" y="142" key="IDE.errors.dialog" timestamp="1597332406918">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597332406918" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1597312060914">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597312060914" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597332424696">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597332424696" />
+    <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1597320668274">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597320668274" />
+    <state x="338" y="155" width="604" height="490" key="find.popup" timestamp="1597328600344">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="338" y="155" width="604" height="490" key="find.popup/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597328600344" />
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1597328459450">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597328459450" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

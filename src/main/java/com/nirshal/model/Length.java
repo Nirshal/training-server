@@ -10,16 +10,15 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Length {
-    String type;
-    String swimStroke;
-    LocalDateTime startTime;
-    LocalDateTime timestamp;
-    Double totalElapsedTime;
-    Double totalTimerTime;
-    Double avgSpeed;
-    Integer avgSwimmingCadence;
-    Integer totalStrokes;
-    Integer totalCalories;
-
+    private String type;
+    private String swimStroke;
+    private LocalDateTime startTime;
+    private LocalDateTime timestamp;
+    private Double totalElapsedTime;
+    private Double totalTimerTime;
+    private Double avgSpeed;
+    private Integer avgSwimmingCadence;
+    private Integer totalStrokes;
+    private Integer totalCalories;
 }
 

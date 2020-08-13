@@ -1,6 +1,7 @@
 com/nirshal/util/mongodb/MongoItemClass.class
 com/nirshal/util/mongodb/MongoItem.class
 com/nirshal/model/Training.class
+com/nirshal/model/Device.class
 com/nirshal/repository/TrainingRepository.class
 com/nirshal/rest/RestConstants.class
 com/nirshal/util/decoders/MyListener.class

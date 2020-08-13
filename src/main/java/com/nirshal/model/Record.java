@@ -11,21 +11,21 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Record {
 
-    LocalDateTime timestamp;
-    Double distance;
+    private LocalDateTime timestamp;
+    private Double distance;
 
-    Double speed;
-    Double enhancedSpeed;
-    Integer heartRate;
-    Integer calories;
+    private Double speed;
+    private Double enhancedSpeed;
+    private Integer heartRate;
+    private Integer calories;
 
-    Integer cadence;
-    Double stepLength;
+    private Integer cadence;
+    private Double stepLength;
 
-    Double positionLat;
-    Double positionLong;
-    Double altitude;
-    Double enhancedAltitude;
-    Integer gpsAccuracy;
+    private Double positionLat;
+    private Double positionLong;
+    private Double altitude;
+    private Double enhancedAltitude;
+    private Integer gpsAccuracy;
 
 }

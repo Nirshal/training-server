@@ -11,37 +11,37 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Lap {
 
-    LocalDateTime timestamp;
-    LocalDateTime startTimestamp;
+    private LocalDateTime timestamp;
+    private LocalDateTime startTimestamp;
 
-    String sport;
-    Double distance;
+    private String sport;
+    private Double distance;
 
-    Double totalMovingTime;
-    Double totalTimerTime;
-    Double totalElapsedTime;
+    private Double totalMovingTime;
+    private Double totalTimerTime;
+    private Double totalElapsedTime;
 
-    Integer avgCadence;
-    Integer maxCadence;
+    private Integer avgCadence;
+    private Integer maxCadence;
 
-    Integer avgHR;
-    Integer minHR;
-    Integer maxHR;
-    Integer totalCalories;
+    private Integer avgHR;
+    private Integer minHR;
+    private Integer maxHR;
+    private Integer totalCalories;
 
-    Integer avgRunningCadence;
-    Integer maxRunningCadence;
+    private Integer avgRunningCadence;
+    private Integer maxRunningCadence;
 
-    Double avgSpeed;
-    Double maxSpeed;
+    private Double avgSpeed;
+    private Double maxSpeed;
 
-    Double avgStepLength;
+    private Double avgStepLength;
 
-    Double startPositionLat;
-    Double endPositionLat;
+    private Double startPositionLat;
+    private Double endPositionLat;
 
-    Double startPositionLong;
-    Double endPositionLong;
-    Integer gpsAccuracy;
+    private Double startPositionLong;
+    private Double endPositionLong;
+    private Integer gpsAccuracy;
 
 }

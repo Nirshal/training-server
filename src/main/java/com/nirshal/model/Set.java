@@ -10,14 +10,14 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Set {
-    String type;
-    String exercise;
+    private String type;
+    private String exercise;
     //    String subExercise; // NOT USED BY GARMIN?
-    LocalDateTime startTime;
-    LocalDateTime timestamp;
-    Double duration;
-    Integer repetitions;
-    Double weight;
+    private LocalDateTime startTime;
+    private LocalDateTime timestamp;
+    private Double duration;
+    private Integer repetitions;
+    private Double weight;
 //    String weightDisplayUnit; // NOT USED BY GARMIN?
 
 }
