@@ -3,5 +3,5 @@ maven repository.
 Run the following from the terminal, pointing to the fit.jar file:
 
 -----
- \mvn install:install-file -Dfile=fit.jar -DgroupId=com.garmin -DartifactId=fit -Dversion=21.14.00 -Dpackaging=jar
+ \mvn install:install-file -Dfile=fit.jar -DgroupId=com.garmin -DartifactId=fit -Dversion=21.32.00 -Dpackaging=jar
 -----

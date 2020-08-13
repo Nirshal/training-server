@@ -276,7 +276,7 @@ public class FitFilesDecoder
         System.out.println("SessionMesg");
         System.out.println(sessionMesg.getSport());
         System.out.println("---");
-        // TODO: complete this, is is full of infos!!!
+        // TODO: complete this, it is full of infos!!!
 
     }
 }

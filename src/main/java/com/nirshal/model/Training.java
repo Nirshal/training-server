@@ -17,9 +17,9 @@ public class Training implements MongoItem {
     String id;
     LocalDateTime creationDate;
 
-    List<Lap> laps = new ArrayList();
-    List<Record> records = new ArrayList();
-    List<Set> sets = new ArrayList();
-    List<Length> lengths = new ArrayList();
+    List<Lap> laps = new ArrayList<>();
+    List<Record> records = new ArrayList<>();
+    List<Set> sets = new ArrayList<>();
+    List<Length> lengths = new ArrayList<>();
 
 }

@@ -46,7 +46,7 @@ public class TrainingsResource {
         return trainingService.update(training);
     }
     @DELETE
-    public Training update(@QueryParam(RestConstants.TRAINING_ID) String trainingId){
+    public Training delete(@QueryParam(RestConstants.TRAINING_ID) String trainingId){
         logger.info("Received request to delete a training.");
         return trainingService.delete(trainingId);
     }

@@ -47,13 +47,13 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.10</version>
+      <version>1.18.12</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.garmin</groupId>
       <artifactId>fit</artifactId>
-      <version>21.14.00</version>
+      <version>21.32.00</version>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
