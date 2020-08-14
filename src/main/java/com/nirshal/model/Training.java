@@ -4,6 +4,7 @@ import com.nirshal.util.mongodb.MongoItem;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.File;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +30,7 @@ public class Training implements MongoItem {
     private List<Record> records = new ArrayList<>();
     private List<Set> sets = new ArrayList<>();
     private List<Length> lengths = new ArrayList<>();
+
+    private byte[] file;
 
 }

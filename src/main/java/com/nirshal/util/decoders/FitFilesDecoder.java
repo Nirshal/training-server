@@ -88,6 +88,10 @@ public class FitFilesDecoder
             training = new Training();
             decode.read(in, mesgBroadcaster, mesgBroadcaster);
             logger.info("Decoded FIT file ");
+
+            byte[] binaryContent = (new FileInputStream(file)).readAllBytes();
+            training.setFile(binaryContent);
+
             return training;
         }
     }

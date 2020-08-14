@@ -1,4 +1,6 @@
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/decoders/TrainingFileDecoder.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/TrainingInfo.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/services/util/FileContainer.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoItemClass.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/decoders/MyListener.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Training.java
@@ -7,6 +9,7 @@
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Set.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollections.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollectionsIndexesProvider.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/mappers/TrainingMapper.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/data/DateManager.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/rest/TrainingsResource.java
