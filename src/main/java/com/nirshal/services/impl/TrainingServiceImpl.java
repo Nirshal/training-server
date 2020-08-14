@@ -50,7 +50,7 @@ public class TrainingServiceImpl implements TrainingService {
     public Training update(Training training) {
         logger.info("Updating training with id={}.", training.getId());
         UpdateResult result = trainingRepository.getRepo().upsert(training);
-        if (result.isModifiedCountAvailable() && result.getModifiedCount() ==1){
+        if (result.getModifiedCount() ==1){
             logger.info("Updated training with id={}, operation result={}.", training.getId(), result.toString());
             return training;
         } else {

@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="training-server" target="1.8" />
+      <module name="training-server" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
