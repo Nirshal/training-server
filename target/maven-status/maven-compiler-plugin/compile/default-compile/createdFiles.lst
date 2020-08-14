@@ -1,5 +1,7 @@
 com/nirshal/util/mongodb/MongoItemClass.class
 com/nirshal/util/mongodb/MongoItem.class
+com/nirshal/model/Set.class
+com/nirshal/util/decoders/TrainingFileDecoder.class
 com/nirshal/model/Training.class
 com/nirshal/model/Device.class
 com/nirshal/repository/TrainingRepository.class
@@ -10,6 +12,7 @@ com/nirshal/util/data/Semicircles.class
 com/nirshal/repository/impl/TrainingRepositoryImpl.class
 com/nirshal/util/data/DateManager.class
 com/nirshal/model/Record.class
+com/nirshal/util/decoders/FitFilesDecoder.class
 com/nirshal/util/mongodb/MongoRepositoryCommonQueries.class
 com/nirshal/rest/TrainingsResource.class
 com/nirshal/util/mongodb/MongoRepository.class

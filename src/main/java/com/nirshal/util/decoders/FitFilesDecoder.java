@@ -102,8 +102,8 @@ public class FitFilesDecoder
         );
         training.getLaps().add(
                 new Lap(
-                        DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getTimestamp().getTimestamp(), "Europe/Rome"),
-                        DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getStartTime().getTimestamp(),"Europe/Rome"),
+                        m.getTimestamp() == null ? null : DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getTimestamp().getTimestamp(), "Europe/Rome"),
+                        m.getStartTime() == null ? null : DateManager.getLocalizedDateTimeFromGarminTimestamp(m.getStartTime().getTimestamp(),"Europe/Rome"),
                         m.getSport().name(),
                         m.getTotalDistance() == null ? null : m.getTotalDistance().doubleValue(),
                         m.getTotalMovingTime() == null ? null : m.getTotalMovingTime().doubleValue(),
@@ -138,6 +138,7 @@ public class FitFilesDecoder
         training.setCreationDate(DateManager.getLocalizedDateTimeFromGarminTimestamp(fileIdMesg.getTimeCreated().getTimestamp(), "Europe/Rome"));
         logger.info("File creation date: {}", training.getCreationDate());
 
+
         Device device = new Device(
                 GarminProduct.getStringFromValue(fileIdMesg.getGarminProduct()),
                 fileIdMesg.getSerialNumber()
@@ -145,6 +146,8 @@ public class FitFilesDecoder
         training.setDevice(device);
         logger.info("Device used: {}", training.getDevice());
 
+        training.setId(fileIdMesg.getTimeCreated().getTimestamp() + "_" + training.getDevice().getSerial());
+        logger.info("FIT file generated id={}", training.getId());
     }
 
     @Override

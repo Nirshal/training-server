@@ -29,7 +29,7 @@ public class TrainingServiceImpl implements TrainingService {
     TrainingFileDecoder decoder;
 
     public Training add(File file) throws IOException {
-        logger.info("Sending file to decoder.");
+        logger.info("Sending file {} to decoder.", file.getName());
         Training decodedTraining = decoder.decode(file);
         logger.info("Saving decoded file in the repository.");
         // TODO: de-comment this to re-enable repo save.
