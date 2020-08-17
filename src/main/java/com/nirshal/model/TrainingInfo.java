@@ -15,5 +15,7 @@ public class TrainingInfo {
     private Integer totalDistance; // in meters
     private Integer totalCalories;
     private Double avgSpeed; // [m/s]
+    private String description;
+    private String comments;
 
 }

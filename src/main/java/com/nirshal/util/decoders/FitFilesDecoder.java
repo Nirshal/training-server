@@ -4,6 +4,7 @@ import com.garmin.fit.*;
 import com.nirshal.model.*;
 import com.nirshal.util.data.DateManager;
 import com.nirshal.util.data.Semicircles;
+import lombok.Cleanup;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -89,7 +90,10 @@ public class FitFilesDecoder
             decode.read(in, mesgBroadcaster, mesgBroadcaster);
             logger.info("Decoded FIT file ");
 
-            byte[] binaryContent = (new FileInputStream(file)).readAllBytes();
+            training.setDescription(training.getSport());
+
+            @Cleanup FileInputStream fileData = new FileInputStream(file);
+            byte[] binaryContent = fileData.readAllBytes();
             training.setFile(binaryContent);
 
             return training;

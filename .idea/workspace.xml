@@ -22,23 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Added latest jar fit library">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/TrainingInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/mappers/TrainingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/util/FileContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Added id to trainings so that it's possible to understand if multiple files are the same activity.&#10;Added the binary file to mongodb, and api to fetch it back.&#10;Added mapstruct in order to fetch only a subset of info from the original Training class (useful for the list).">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/DateRangeParameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/TrainingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/TrainingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/RestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/RestConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,20 +76,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/docker" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nirshal.rest" />
+      <recent name="com.nirshal.util.mongodb" />
+      <recent name="com.nirshal.util.logger" />
+      <recent name="com.nirshal.util" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders" />
       <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nirshal.util.mongodb" />
-      <recent name="com.nirshal.util.logger" />
-      <recent name="com.nirshal.util" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/docker" />
     </key>
   </component>
   <component name="RunManager">
@@ -210,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597401954720</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added id to trainings so that it's possible to understand if multiple files are the same activity.&#10;Added the binary file to mongodb, and api to fetch it back.&#10;Added mapstruct in order to fetch only a subset of info from the original Training class (useful for the list).">
+      <created>1597419337654</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597419337655</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +241,8 @@
     <MESSAGE value="Rolled up Quarkus version to 1.7.0-FINAL" />
     <MESSAGE value="Rolled up Quarkus version to 1.7.0.Final" />
     <MESSAGE value="Added latest jar fit library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added latest jar fit library" />
+    <MESSAGE value="Added id to trainings so that it's possible to understand if multiple files are the same activity.&#10;Added the binary file to mongodb, and api to fetch it back.&#10;Added mapstruct in order to fetch only a subset of info from the original Training class (useful for the list)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added id to trainings so that it's possible to understand if multiple files are the same activity.&#10;Added the binary file to mongodb, and api to fetch it back.&#10;Added mapstruct in order to fetch only a subset of info from the original Training class (useful for the list)." />
   </component>
   <component name="WindowStateProjectService">
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318935106">
@@ -313,10 +316,11 @@
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597312060914" />
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1597411757850" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597334340460">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597420965143">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334340460" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1597420965143" />
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1597320668274">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -329,11 +333,11 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334368190" />
-    <state width="544" height="315" key="javadoc.popup.new" timestamp="1597411863250">
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1597662421640">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334431083" />
-    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1597411863250" />
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1597662421640" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1597417636533">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

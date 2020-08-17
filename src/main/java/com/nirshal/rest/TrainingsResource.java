@@ -6,17 +6,20 @@ import com.nirshal.model.TrainingInfo;
 import com.nirshal.services.TrainingService;
 import com.nirshal.services.util.FileContainer;
 import com.nirshal.util.mongodb.Page;
+import lombok.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 @Path("/trainings")
@@ -68,6 +71,35 @@ public class TrainingsResource {
     public Training delete(@QueryParam(RestConstants.TRAINING_ID) String trainingId){
         logger.info("Received request to delete a training.");
         return trainingService.delete(trainingId);
+    }
+
+    @GET
+    @Path("/range")
+    public List<TrainingInfo> getByDates(@BeanParam @Valid DateRangeParameters rangeParameters){
+        logger.info("Received request to fetch a list of Training between dates.");
+        return trainingService.getByDates(rangeParameters.getFromDate(),rangeParameters.getToDate());
+    }
+
+    @PATCH
+    @Path("/{"+ RestConstants.TRAINING_ID +"}/description")
+    public TrainingInfo setDescription(
+            @PathParam(RestConstants.TRAINING_ID) @NonNull @NotEmpty String trainingId,
+            String body
+    )
+    {
+        logger.info("Received request to update description for training with id={}.", trainingId);
+        return trainingService.update(trainingId, body, null);
+    }
+
+    @PATCH
+    @Path("/{"+ RestConstants.TRAINING_ID +"}/comments")
+    public TrainingInfo setComments(
+            @PathParam(RestConstants.TRAINING_ID) @NonNull @NotEmpty String trainingId,
+            String body
+    )
+    {
+        logger.info("Received request to update comments for training with id={}.", trainingId);
+        return trainingService.update(trainingId, null, body);
     }
 
 }

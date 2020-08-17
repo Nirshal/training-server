@@ -12,6 +12,4 @@ public class RestConstants {
     public static final String PARAM_SORT_BY ="sortBy";
     public static final String PARAM_SORT_DIRECTION = "sortDirection";
 
-
-
 }

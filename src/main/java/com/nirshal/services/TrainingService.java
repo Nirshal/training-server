@@ -7,6 +7,7 @@ import com.nirshal.util.mongodb.Page;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 public interface TrainingService {
@@ -16,5 +17,7 @@ public interface TrainingService {
     List<TrainingInfo> get(Page page);
     Training update(Training training);
     Training delete(String trainingId);
+    List<TrainingInfo> getByDates(Date from, Date to);
 
+    TrainingInfo update(String trainingId, String description, String comments);
 }

@@ -14,6 +14,8 @@ import java.util.List;
 public class Training implements MongoItem {
 
     public static final String SWIM_STROKE_NONE = "NONE";
+    public static final String CREATION_DATE_FIELD_NAME = "creationDate";
+
 
     private String id;
     private String sport;
@@ -23,6 +25,8 @@ public class Training implements MongoItem {
     private Integer totalDistance; // in meters
     private Integer totalCalories;
     private Double avgSpeed; // [m/s]
+    private String description;
+    private String comments;
 
     private Device device;
 

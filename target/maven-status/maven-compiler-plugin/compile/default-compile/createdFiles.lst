@@ -8,6 +8,7 @@ com/nirshal/model/Training.class
 com/nirshal/model/Device.class
 com/nirshal/repository/TrainingRepository.class
 com/nirshal/rest/RestConstants.class
+com/nirshal/rest/DateRangeParameters.class
 com/nirshal/util/decoders/MyListener.class
 com/nirshal/services/util/FileContainer.class
 com/nirshal/util/mongodb/FieldConstants.class
