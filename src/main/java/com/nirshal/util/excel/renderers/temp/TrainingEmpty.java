@@ -1,45 +1,19 @@
-package com.nirshal.util.excel.renderers;
+package com.nirshal.util.excel.renderers.temp;
 
-import com.nirshal.tutorials.xls.StyleTypes;
-import com.nirshal.tutorials.xls.XLSOutputCell;
+import com.nirshal.util.excel.StyleTypes;
+import com.nirshal.util.excel.XLSOutputCell;
+import com.nirshal.util.excel.renderers.UnitsType;
 import org.apache.poi.ss.usermodel.CellType;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrainingEmpty extends Training {
+public class TrainingEmpty{
 
-    @Override
     public UnitsType getType() {
         return UnitsType.EMPTY;
     }
 
-    @Override
-    public List<List<String>> toCSVRecord(){
-        List<String> row1 = new ArrayList<>();
-        List<String> row2 = new ArrayList<>();
-        List<String> row3 = new ArrayList<>();
-        //0 - Settimana
-        row1.add("");
-        row2.add("");
-        row3.add("");
-        //1 - Data;
-        row1.add(this.getReferenceDateString());
-        row2.add("");
-        row3.add("");
-        //2 - Allenamento
-        row1.add(this.getDescription());
-        row2.add("");
-        row3.add("");
-
-        List<List<String>> record = new ArrayList<>();
-        record.add(row1);
-        record.add(row2);
-        record.add(row3);
-        return record;
-    }
-
-    @Override
     public List<List<XLSOutputCell>> toXLSRecord() {
         List<XLSOutputCell> row1 = new ArrayList<>();
         List<XLSOutputCell> row2 = new ArrayList<>();

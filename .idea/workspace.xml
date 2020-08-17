@@ -22,29 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Added description and comment.&#10;Added a way to query trainings on range of dates.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/StyleTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSOutputCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSOutputWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSPrintable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSStyler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/DistanceUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/Formatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/Interval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/PaceUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/SpeedUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/SwimStrokeData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingBike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingEmpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingSwim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingUnknown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWalking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWorkout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/UnitsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
+    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Start importing classes from older project.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingBike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingBike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingEmpty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingSwim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingSwim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingUnknown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWalking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWalking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWorkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWorkout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597672235834</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Start importing classes from older project.">
+      <created>1597675846403</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1597675846403</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +260,8 @@
     <MESSAGE value="Added latest jar fit library" />
     <MESSAGE value="Added id to trainings so that it's possible to understand if multiple files are the same activity.&#10;Added the binary file to mongodb, and api to fetch it back.&#10;Added mapstruct in order to fetch only a subset of info from the original Training class (useful for the list)." />
     <MESSAGE value="Added description and comment.&#10;Added a way to query trainings on range of dates." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added description and comment.&#10;Added a way to query trainings on range of dates." />
+    <MESSAGE value="Start importing classes from older project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Start importing classes from older project." />
   </component>
   <component name="WindowStateProjectService">
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318935106">
