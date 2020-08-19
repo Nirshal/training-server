@@ -1,4 +1,5 @@
 com/nirshal/util/mongodb/MongoItemClass.class
+com/nirshal/repository/impl/TrainingFileRepositoryImpl.class
 com/nirshal/util/mongodb/MongoItem.class
 com/nirshal/util/files/FilesLoaderService.class
 com/nirshal/model/mappers/TrainingMapperImpl.class
@@ -8,6 +9,7 @@ com/nirshal/model/Training.class
 com/nirshal/model/Device.class
 com/nirshal/util/excel/XLSOutputWriter$1.class
 com/nirshal/rest/RestConstants.class
+com/nirshal/model/TrainingFile.class
 com/nirshal/util/excel/XLSStyler.class
 com/nirshal/util/files/FileManager.class
 com/nirshal/util/data/formatting/SwimStrokeData.class
@@ -15,6 +17,7 @@ com/nirshal/rest/DateRangeParameters.class
 com/nirshal/util/decoders/MyListener.class
 com/nirshal/services/util/FileContainer.class
 com/nirshal/util/excel/Renderer$1.class
+com/nirshal/repository/TrainingFileRepository.class
 com/nirshal/util/data/Semicircles.class
 com/nirshal/util/data/formatting/UnitsType.class
 com/nirshal/repository/impl/TrainingRepositoryImpl.class

@@ -5,14 +5,18 @@ import com.mongodb.client.model.Sorts;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
 import com.nirshal.model.Training;
+import com.nirshal.model.TrainingFile;
 import com.nirshal.model.TrainingInfo;
 import com.nirshal.model.mappers.TrainingMapper;
+import com.nirshal.repository.TrainingFileRepository;
 import com.nirshal.repository.TrainingRepository;
 import com.nirshal.services.TrainingService;
 import com.nirshal.services.util.FileContainer;
 import com.nirshal.util.decoders.TrainingFileDecoder;
 import com.nirshal.util.excel.XLSOutputWriter;
+import com.nirshal.util.mongodb.MongoRepositoryCommonQueries;
 import com.nirshal.util.mongodb.Page;
+import lombok.Cleanup;
 import org.bson.conversions.Bson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +24,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,6 +36,8 @@ public class TrainingServiceImpl implements TrainingService {
 
     @Inject
     TrainingRepository trainingRepository;
+    @Inject
+    TrainingFileRepository fileRepository;
 
     Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
@@ -45,9 +52,21 @@ public class TrainingServiceImpl implements TrainingService {
         logger.info("Sending file {} to decoder.", file.getName());
         Training decodedTraining = decoder.decode(file);
         logger.info("Saving decoded file in the repository.");
-        // TODO: de-comment this to re-enable repo save.
+        // if already existing we save comments etc in order to not overwrite them
+        if (trainingRepository.getRepo().existsAtLeastOne(MongoRepositoryCommonQueries.hasThisId(decodedTraining.getId()))){
+            Training existingTraining = trainingRepository.getRepo().findById(decodedTraining.getId());
+            decodedTraining.setDescription(existingTraining.getDescription());
+            decodedTraining.setComments(existingTraining.getComments());
+        }
         trainingRepository.getRepo().upsert(decodedTraining);
-
+        logger.info("Saving source file in the repository.");
+        @Cleanup FileInputStream fileData = new FileInputStream(file);
+        fileRepository.getRepo().upsert(
+                new TrainingFile(
+                        decodedTraining.getId(),
+                        fileData.readAllBytes()
+                )
+        );
         return decodedTraining;
     }
 
@@ -59,8 +78,9 @@ public class TrainingServiceImpl implements TrainingService {
 
     @Override
     public FileContainer getFile(String id) {
-
+        logger.info("Fetching training file with id={} from repository.", id);
         Training training = get(id);
+        TrainingFile trainingFile = fileRepository.getRepo().findById(id);
 
         return new FileContainer
                 (
@@ -70,7 +90,7 @@ public class TrainingServiceImpl implements TrainingService {
                                 + "_" +
                                 training.getId()
                                 + ".fit",
-                        new ByteArrayInputStream(training.getFile())
+                        new ByteArrayInputStream(trainingFile.getFile())
                 );
     }
 
@@ -109,6 +129,8 @@ public class TrainingServiceImpl implements TrainingService {
         Training training = trainingRepository.getRepo().findById(trainingId);
         if (training != null) {
             DeleteResult result = trainingRepository.getRepo().deleteById(trainingId);
+            DeleteResult fileDeleteResult = fileRepository.getRepo().deleteById(trainingId);
+
             if (result.getDeletedCount() == 1) {
                 logger.info("Deleted training with id={}. Result={}", trainingId, result.toString());
                 return training;
@@ -126,10 +148,10 @@ public class TrainingServiceImpl implements TrainingService {
 
     @Override
     public List<TrainingInfo> getByDates(Date from, Date to) {
-            return getTrainingsByDates(from,to)
-                    .stream()
-                    .map(trainingMapper::trainingToTrainingInfo)
-                    .collect(Collectors.toList());
+        return getTrainingsByDates(from,to)
+                .stream()
+                .map(trainingMapper::trainingToTrainingInfo)
+                .collect(Collectors.toList());
     }
 
     private List<Training> getTrainingsByDates(Date from, Date to) {
