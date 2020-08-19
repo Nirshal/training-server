@@ -5,5 +5,11 @@ import com.nirshal.util.mongodb.MongoRepository;
 
 public interface TrainingFileRepository {
 
-    MongoRepository<TrainingFile> getRepo();
+//    MongoRepository<TrainingFile> getRepo();
+
+    TrainingFile findById(String id);
+
+    void upsert(TrainingFile file);
+
+    void deleteById(String id);
 }

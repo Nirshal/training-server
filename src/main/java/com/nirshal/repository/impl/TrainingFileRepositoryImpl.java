@@ -1,5 +1,6 @@
 package com.nirshal.repository.impl;
 
+import com.nirshal.model.Training;
 import com.nirshal.model.TrainingFile;
 import com.nirshal.repository.TrainingFileRepository;
 import com.nirshal.util.mongodb.MongoCollections;
@@ -10,7 +11,6 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 @ApplicationScoped
-@Data
 public class TrainingFileRepositoryImpl implements TrainingFileRepository {
 
     @Inject
@@ -21,6 +21,20 @@ public class TrainingFileRepositoryImpl implements TrainingFileRepository {
     @PostConstruct
     void init(){
         repo = collections.getRepositoryFrom(TrainingFile.class);
+    }
+
+    @Override
+    public TrainingFile findById(String id){
+        return repo.findById(id);
+    }
+
+    @Override
+    public void upsert(TrainingFile file){
+        repo.upsert(file);
+    }
+    @Override
+    public void deleteById(String id){
+        repo.deleteById(id);
     }
 
 }
