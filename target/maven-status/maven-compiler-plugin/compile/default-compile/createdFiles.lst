@@ -27,6 +27,7 @@ com/nirshal/util/containers/Table.class
 com/nirshal/model/Lap.class
 com/nirshal/util/mongodb/MongoCollections.class
 com/nirshal/util/mongodb/MongoClientHelperQuarkus.class
+com/nirshal/util/mongodb/MongoCollectionsIndexesProvider.class
 com/nirshal/util/mongodb/Page.class
 com/nirshal/model/Length.class
 com/nirshal/model/TrainingInfo.class
