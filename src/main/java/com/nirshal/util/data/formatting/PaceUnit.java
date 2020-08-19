@@ -1,4 +1,4 @@
-package com.nirshal.util.excel.renderers;
+package com.nirshal.util.data.formatting;
 
 public enum PaceUnit {
     SI_RUNNING(1000, "min/Km"),// (16.6667),

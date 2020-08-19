@@ -1,4 +1,4 @@
-package com.nirshal.util.excel.renderers;
+package com.nirshal.util.data.formatting;
 
 import com.garmin.fit.Sport;
 
@@ -47,5 +47,13 @@ public enum UnitsType {
 
     public SpeedUnit getSpeedUnit() {
         return speedUnit;
+    }
+
+    public static UnitsType getFromSport(String sport){
+        for (UnitsType unit: UnitsType.values()){
+            if (unit.getDefaultDescription().equalsIgnoreCase(sport)) return unit;
+        }
+        return UNKNOWN;
+
     }
 }

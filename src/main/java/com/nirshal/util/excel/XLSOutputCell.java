@@ -6,6 +6,9 @@ import org.apache.poi.ss.usermodel.CellType;
 
 @AllArgsConstructor
 public class XLSOutputCell {
+
+    public static XLSOutputCell EMPTY = new XLSOutputCell(CellType.STRING, StyleTypes.TEXT,"");
+
     @Getter
     private CellType type;
     @Getter

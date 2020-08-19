@@ -1,4 +1,4 @@
-package com.nirshal.util.excel.renderers;
+package com.nirshal.util.data.formatting;
 
 public enum SpeedUnit {
     SI_RUNNING(3.6, "Km/h"),// (16.6667),

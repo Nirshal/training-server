@@ -11,11 +11,11 @@ import com.nirshal.repository.TrainingRepository;
 import com.nirshal.services.TrainingService;
 import com.nirshal.services.util.FileContainer;
 import com.nirshal.util.decoders.TrainingFileDecoder;
+import com.nirshal.util.excel.XLSOutputWriter;
 import com.nirshal.util.mongodb.Page;
 import org.bson.conversions.Bson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.ByteArrayInputStream;
@@ -126,6 +126,13 @@ public class TrainingServiceImpl implements TrainingService {
 
     @Override
     public List<TrainingInfo> getByDates(Date from, Date to) {
+            return getTrainingsByDates(from,to)
+                    .stream()
+                    .map(trainingMapper::trainingToTrainingInfo)
+                    .collect(Collectors.toList());
+    }
+
+    private List<Training> getTrainingsByDates(Date from, Date to) {
         logger.info("Fetching trainings list from {} to {}", from, to);
 
         Bson fromDate = from != null ? Filters.gte(Training.CREATION_DATE_FIELD_NAME, from) : null;
@@ -137,10 +144,7 @@ public class TrainingServiceImpl implements TrainingService {
             return trainingRepository
                     .getRepo().getCollection()
                     .find()
-                    .sort(sorting).into(new ArrayList<>())
-                    .stream()
-                    .map(trainingMapper::trainingToTrainingInfo)
-                    .collect(Collectors.toList());
+                    .sort(sorting).into(new ArrayList<>());
         } else {
             Bson query;
             if (fromDate != null && toDate == null){
@@ -159,12 +163,21 @@ public class TrainingServiceImpl implements TrainingService {
             return trainingRepository
                     .getRepo().getCollection()
                     .find(query)
-                    .sort(sorting).into(new ArrayList<>())
-                    .stream()
-                    .map(trainingMapper::trainingToTrainingInfo)
-                    .collect(Collectors.toList());
+                    .sort(sorting).into(new ArrayList<>());
         }
     }
+
+    @Override
+    public FileContainer export(Date from, Date to) throws IOException {
+        logger.info("Exporting trainings from {} to {}", from, to);
+        return new FileContainer
+                (
+                        "Diary"
+                                + ".xls",
+                        new ByteArrayInputStream(XLSOutputWriter.export(getTrainingsByDates(from,to)))
+                );
+    }
+
     @Override
     public TrainingInfo update(String trainingId, String description, String comments) {
 

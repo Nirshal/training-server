@@ -1,4 +1,4 @@
-package com.nirshal.util.excel.renderers;
+package com.nirshal.util.data.formatting;
 
 public enum DistanceUnit {
     KM (1000, "Km", 1000.0,"m"),// (16.6667),

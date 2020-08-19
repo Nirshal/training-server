@@ -1,4 +1,4 @@
-package com.nirshal.util.excel.renderers;
+package com.nirshal.util.data.formatting;
 
 import java.math.RoundingMode;
 import java.text.NumberFormat;
@@ -18,7 +18,7 @@ public class Formatter {
         int hours = totalSeconds / 3600;
         int minutes = (totalSeconds % 3600)/60;
         int seconds = totalSeconds % 60;
-        int millis = (int) (( duration - totalSeconds )*1000);
+        int millis = (int) (( duration - totalSeconds ) * 1000 );
 
         if (hours != 0){
             return String.format("%d:%02d:%02d.%03d", hours, minutes, seconds, millis);
@@ -26,20 +26,37 @@ public class Formatter {
             return String.format("%01d:%02d.%03d", minutes, seconds, millis);
         }
     }
-    public static String asPace(Double durationPerUnit, PaceUnit unit){
+    public static String asPace(Double speed, PaceUnit unit){
+
+        Double durationPerUnit = unit.getConversionFactor()/speed;
         return Formatter.asTime(durationPerUnit) + " " + unit.getUnitText();
     }
+
+    public static String asRhythmDefaultPerSport(Double speed, String sport){
+        UnitsType unitType = UnitsType.getFromSport(sport);
+
+        switch (unitType){
+            case CYCLING:
+                return asSpeed(speed, unitType.getSpeedUnit());
+            default:
+                return asPace(speed, unitType.getPaceUnit());
+        }
+
+    }
+
     public static String asSpeed(Double speed, SpeedUnit unit){
+        Double unitSpeed = speed * unit.getConversionFactor();
         NumberFormat nf = NumberFormat.getNumberInstance();
         nf.setMaximumFractionDigits(3);
         nf.setMinimumFractionDigits(0);
         nf.setRoundingMode(RoundingMode.HALF_UP);
-        String printSpeedString = nf.format(speed);
+        String printSpeedString = nf.format(unitSpeed);
 
         return printSpeedString + " " + unit.getUnitText();
-
     }
-    public static String asDistance(Double distance, DistanceUnit unit){
+
+    public static String asDistance(Double distanceMeter, DistanceUnit unit){
+        double distance = distanceMeter/unit.getSubUnitMultiplier();
         double printDistanceValue = (distance < 1.0 ?
                 distance*unit.getSubUnitMultiplier()
                 :
@@ -55,7 +72,6 @@ public class Formatter {
         String printDistanceString = nf.format(printDistanceValue);
 
         return printDistanceString + " " + printUnit;
-
     }
 
 }

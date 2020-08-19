@@ -19,5 +19,7 @@ public interface TrainingService {
     Training delete(String trainingId);
     List<TrainingInfo> getByDates(Date from, Date to);
 
+    FileContainer export(Date from, Date to) throws IOException;
+
     TrainingInfo update(String trainingId, String description, String comments);
 }

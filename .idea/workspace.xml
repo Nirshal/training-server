@@ -22,14 +22,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Start importing classes from older project.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingBike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingBike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingEmpty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingSwim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingSwim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingUnknown.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWalking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWalking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWorkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/TrainingWorkout.java" afterDir="false" />
+    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Started cleaning old code.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/containers/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/containers/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/formatting/SwimStrokeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Lap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Lap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/TrainingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/decoders/FitFilesDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSOutputCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSOutputCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSOutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSOutputWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/XLSPrintable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/DistanceUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/formatting/DistanceUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/formatting/Formatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/Interval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/PaceUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/formatting/PaceUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/SpeedUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/formatting/SpeedUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/SwimStrokeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/UnitsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/data/formatting/UnitsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/Training.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingEmpty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingSwim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingWalking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingWorkout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +98,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers/temp/TrainingSwim.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -229,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597675846403</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Started cleaning old code.">
+      <created>1597677168672</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1597677168672</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,74 +291,81 @@
     <MESSAGE value="Added id to trainings so that it's possible to understand if multiple files are the same activity.&#10;Added the binary file to mongodb, and api to fetch it back.&#10;Added mapstruct in order to fetch only a subset of info from the original Training class (useful for the list)." />
     <MESSAGE value="Added description and comment.&#10;Added a way to query trainings on range of dates." />
     <MESSAGE value="Start importing classes from older project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Start importing classes from older project." />
+    <MESSAGE value="Started cleaning old code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started cleaning old code." />
   </component>
   <component name="WindowStateProjectService">
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318935106">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597318935106" />
-    <state x="453" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1597406964055">
+    <state x="453" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1597745634200">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="453" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597745634200" />
     <state x="453" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1597406964055" />
     <state x="113" y="331" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597418926571">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="113" y="331" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.800@0.0.1280.800" timestamp="1597418926571" />
-    <state x="532" y="158" key="#xdebugger.evaluate" timestamp="1597400070099">
+    <state x="410" y="276" width="774" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597677091114">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="464" y="173" key="#xdebugger.evaluate/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597333827086" />
+    <state x="410" y="276" width="774" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.800@0.0.1280.800" timestamp="1597677091114" />
+    <state x="672" y="221" key="#xdebugger.evaluate" timestamp="1597761910952">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="672" y="221" key="#xdebugger.evaluate/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597761910952" />
     <state x="532" y="158" key="#xdebugger.evaluate/0.0.1280.800@0.0.1280.800" timestamp="1597400070099" />
-    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1597402176640">
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1597744394558">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1597402176640" />
-    <state width="1238" height="172" key="GridCell.Tab.0.bottom" timestamp="1597411439685">
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597744394558" />
+    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1597679620753" />
+    <state width="1238" height="283" key="GridCell.Tab.0.bottom" timestamp="1597766679281">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476409" />
+    <state width="1238" height="283" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679281" />
     <state width="1238" height="172" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597411439685" />
-    <state width="1238" height="172" key="GridCell.Tab.0.center" timestamp="1597411439684">
+    <state width="1238" height="283" key="GridCell.Tab.0.center" timestamp="1597766679277">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.0.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476407" />
+    <state width="1238" height="283" key="GridCell.Tab.0.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679277" />
     <state width="1238" height="172" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597411439684" />
-    <state width="1238" height="172" key="GridCell.Tab.0.left" timestamp="1597411439683">
+    <state width="1238" height="283" key="GridCell.Tab.0.left" timestamp="1597766679273">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.0.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476406" />
+    <state width="1238" height="283" key="GridCell.Tab.0.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679273" />
     <state width="1238" height="172" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597411439683" />
-    <state width="1238" height="172" key="GridCell.Tab.0.right" timestamp="1597411439685">
+    <state width="1238" height="283" key="GridCell.Tab.0.right" timestamp="1597766679279">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.0.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476408" />
+    <state width="1238" height="283" key="GridCell.Tab.0.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679279" />
     <state width="1238" height="172" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597411439685" />
-    <state width="1238" height="172" key="GridCell.Tab.1.bottom" timestamp="1597411439687">
+    <state width="1238" height="283" key="GridCell.Tab.1.bottom" timestamp="1597766679290">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.1.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476411" />
+    <state width="1238" height="283" key="GridCell.Tab.1.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679290" />
     <state width="1238" height="172" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597411439687" />
-    <state width="1238" height="172" key="GridCell.Tab.1.center" timestamp="1597411439686">
+    <state width="1238" height="283" key="GridCell.Tab.1.center" timestamp="1597766679286">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.1.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476410" />
+    <state width="1238" height="283" key="GridCell.Tab.1.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679286" />
     <state width="1238" height="172" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1597411439686" />
-    <state width="1238" height="172" key="GridCell.Tab.1.left" timestamp="1597411439686">
+    <state width="1238" height="283" key="GridCell.Tab.1.left" timestamp="1597766679283">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.1.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476409" />
+    <state width="1238" height="283" key="GridCell.Tab.1.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679283" />
     <state width="1238" height="172" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1597411439686" />
-    <state width="1238" height="172" key="GridCell.Tab.1.right" timestamp="1597411439687">
+    <state width="1238" height="283" key="GridCell.Tab.1.right" timestamp="1597766679288">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="386" key="GridCell.Tab.1.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597335476411" />
+    <state width="1238" height="283" key="GridCell.Tab.1.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597766679288" />
     <state width="1238" height="172" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1597411439687" />
-    <state x="228" y="142" key="IDE.errors.dialog" timestamp="1597418859787">
+    <state x="228" y="142" key="IDE.errors.dialog" timestamp="1597751636763">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597332406918" />
+    <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597751636763" />
     <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800@0.0.1280.800" timestamp="1597418859787" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1597411757850">
       <screen x="0" y="0" width="1280" height="800" />
@@ -344,20 +381,20 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597320668274" />
-    <state x="338" y="155" width="604" height="490" key="find.popup" timestamp="1597674129084">
+    <state x="338" y="155" width="604" height="490" key="find.popup" timestamp="1597743284019">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="338" y="155" width="604" height="490" key="find.popup/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597328600344" />
+    <state x="338" y="155" width="604" height="490" key="find.popup/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597743284019" />
     <state x="338" y="155" width="604" height="490" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1597674129084" />
     <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597334368190">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334368190" />
-    <state width="544" height="315" key="javadoc.popup.new" timestamp="1597674516186">
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1597832471121">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334431083" />
-    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1597674516186" />
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597832471121" />
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1597681571073" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1597417636533">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

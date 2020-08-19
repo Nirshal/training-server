@@ -3,8 +3,6 @@ package com.nirshal.model;
 import com.nirshal.util.mongodb.MongoItem;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.io.File;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +19,8 @@ public class Training implements MongoItem {
     private String sport;
     private LocalDateTime creationDate;
     private LocalDateTime startTime;
-    private Integer totalTime; // in seconds
-    private Integer totalDistance; // in meters
+    private Double totalTime; // in seconds
+    private Double totalDistance; // in meters
     private Integer totalCalories;
     private Double avgSpeed; // [m/s]
     private String description;

@@ -9,17 +9,14 @@ import com.nirshal.util.mongodb.Page;
 import lombok.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 @Path("/trainings")
@@ -78,6 +75,18 @@ public class TrainingsResource {
     public List<TrainingInfo> getByDates(@BeanParam @Valid DateRangeParameters rangeParameters){
         logger.info("Received request to fetch a list of Training between dates.");
         return trainingService.getByDates(rangeParameters.getFromDate(),rangeParameters.getToDate());
+    }
+
+    @GET
+    @Path("/export")
+    @Produces(MediaType.APPLICATION_OCTET_STREAM)
+    public Response export(@BeanParam @Valid DateRangeParameters rangeParameters) throws IOException {
+        logger.info("Received request to Export a list of Training between dates.");
+
+        FileContainer file = trainingService.export(rangeParameters.getFromDate(), rangeParameters.getToDate());
+        return Response.ok(file.getFile(), MediaType.APPLICATION_OCTET_STREAM)
+                .header("Content-Disposition", "attachment; filename=\"" + file.getFileName() + "\"" ) //optional
+                .build();
     }
 
     @PATCH

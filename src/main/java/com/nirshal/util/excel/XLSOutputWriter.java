@@ -1,5 +1,8 @@
 package com.nirshal.util.excel;
 
+import com.nirshal.model.Training;
+import com.nirshal.util.data.DateManager;
+import com.nirshal.util.containers.Table;
 import lombok.Cleanup;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
@@ -7,12 +10,11 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
 
 public class XLSOutputWriter {
 
@@ -40,37 +42,41 @@ public class XLSOutputWriter {
             4500
     };
 
-    public static byte[] export(List<XLSPrintable> data) throws IOException {
-//        boolean appending = FileManager.existsFileOrDirectory(outputFile,false);
+    public static byte[] export(List<Training> data) throws IOException {
         try {
             @Cleanup XSSFWorkbook workbook =  new XSSFWorkbook();;
 
-//            if (appending) {
-//                FileInputStream file = new FileInputStream(new File(outputFile));
-//                workbook = new XSSFWorkbook(file);
-//                sheet = workbook.getSheetAt(0);
-//
-//            } else {
             Sheet  sheet = workbook.createSheet();
-//            }
 
             styler = new XLSStyler(workbook);
-//            if (!appending)
-                writeHeader(sheet);
+            writeHeader(sheet);
 
             // Main loop to write the data.
-            for (XLSPrintable training : data) {
-                appendData(sheet, training);
+            LocalDateTime latestDate = null;
+            for (Training training : data) {
+                if (latestDate != null) {
+                    // We fill in the remaining gap in dates:
+                    while (
+                            ChronoUnit.DAYS.between
+                                    (
+                                            latestDate.atZone(ZoneId.of("Europe/Rome")).toInstant(),
+                                            DateManager.zeroingTime(training.getCreationDate()).atZone(ZoneId.of("Europe/Rome")).toInstant()
+                                    ) > 1
+                    ){
+                        latestDate = latestDate.plusDays(1L);
+                        appendData(sheet,Renderer.emptyPlaceholder(latestDate));
+                    }
+                }
+                latestDate = DateManager.zeroingTime(training.getCreationDate());
+                appendData(sheet, Renderer.toXLSRecord(training));
             }
 
             setColumnsWidth(sheet);
-
             fixHeaderStyle(sheet);
 
-            @Cleanup ByteArrayOutputStream out = new ByteArrayOutputStream();//new bytearrayo(outputFile);
+            @Cleanup ByteArrayOutputStream out = new ByteArrayOutputStream();
             workbook.write(out);
-//            workbook.close();
-//            out.close();
+
             return out.toByteArray();
 
         } catch (IOException e) {
@@ -93,7 +99,15 @@ public class XLSOutputWriter {
     }
 
     private static void writeHeader(Sheet sheet){
-        appendRow(sheet,HEADER);
+
+        Table<XLSOutputCell> header = new Table<>(XLSOutputCell.EMPTY);
+
+        int startColumn = 0;
+        for (XLSOutputCell cell: HEADER){
+            header.put(0, startColumn++, cell);
+        }
+
+        appendRow(sheet, header, 0);
         // Shift the header up to avoid to leave an empty at the beginning.
         sheet.shiftRows(0,1,-1);
     }
@@ -125,26 +139,21 @@ public class XLSOutputWriter {
         }
     }
 
-    private static void appendRow(Sheet sheet, List<XLSOutputCell> rowData){
+    private static void appendRow(Sheet sheet, Table<XLSOutputCell> table, int rowNumber){
         Row row = sheet.createRow(sheet.getLastRowNum()+1);
-        for (int i = 0; i<rowData.size(); i++){
-            newCellAt(row, i, rowData.get(i));
+        for (int columnNumber = 0; columnNumber < table.getColumnsSize(); columnNumber++){
+            newCellAt(row, columnNumber, table.get(rowNumber, columnNumber));
         }
         //Update the number of columns
-        numberOfColumns = (numberOfColumns < rowData.size() ? rowData.size() : numberOfColumns);
+        numberOfColumns = Math.max(numberOfColumns, table.getColumnsSize());
     }
 
-    private static void appendData(Sheet sheet, XLSPrintable training){
-
-        List<List<XLSOutputCell>> record = training.toXLSRecord();
-
-        for (List<XLSOutputCell> rowData : record) {
-            appendRow(sheet, rowData);
+    private static void appendData(Sheet sheet, Table<XLSOutputCell> record){
+        for (int i = 0; i< record.getRowsSize(); i++){
+            appendRow(sheet, record, i);
         }
-
-        System.out.println(record.size());
-        if (record.size() > 1) {
-            int startMergeIndex = sheet.getLastRowNum() - record.size() + 1;
+        if (record.getRowsSize() > 1) {
+            int startMergeIndex = sheet.getLastRowNum() - record.getRowsSize() + 1;
             int endMergeIndex = sheet.getLastRowNum() + 1;
             for (int i = mergeColumnStartIndex; i < mergeColumnEndIndex; i++) {
                 sheet.addMergedRegion(new CellRangeAddress(startMergeIndex, endMergeIndex - 1, i, i));

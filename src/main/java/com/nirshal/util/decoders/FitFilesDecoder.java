@@ -132,7 +132,8 @@ public class FitFilesDecoder
                         m.getEndPositionLat() == null ? null : Semicircles.getDegrees(m.getEndPositionLat()),
                         m.getStartPositionLong() == null ? null : Semicircles.getDegrees(m.getStartPositionLong()),
                         m.getEndPositionLong() == null ? null : Semicircles.getDegrees(m.getEndPositionLong()),
-                        m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue()
+                        m.getGpsAccuracy() == null ? null : m.getGpsAccuracy().intValue(),
+                        m.getSwimStroke() == null ? null : SwimStroke.getStringFromValue(m.getSwimStroke())
                 )
         );
     }
@@ -267,8 +268,8 @@ public class FitFilesDecoder
 
         training.setSport(sessionMesg.getSport().toString());
         training.setStartTime(DateManager.getLocalizedDateTimeFromGarminTimestamp(sessionMesg.getStartTime().getTimestamp(),"Europe/Rome"));
-        training.setTotalTime(sessionMesg.getTotalTimerTime().intValue());
-        training.setTotalDistance(sessionMesg.getTotalDistance().intValue());
+        training.setTotalTime(sessionMesg.getTotalTimerTime().doubleValue());
+        training.setTotalDistance(sessionMesg.getTotalDistance().doubleValue());
         training.setTotalCalories(sessionMesg.getTotalCalories());
         training.setAvgSpeed(sessionMesg.getEnhancedAvgSpeed().doubleValue());
 

@@ -43,5 +43,6 @@ public class Lap {
     private Double startPositionLong;
     private Double endPositionLong;
     private Integer gpsAccuracy;
+    private String swimStroke;
 
 }
