@@ -22,13 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Added mongo index on training's creationDate.">
+    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Extracted all repos use inside interfaces.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingFileRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingFileRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,10 +376,10 @@
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597312060914" />
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1597411757850" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597852716768">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1597854594785">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597852716768" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597854594785" />
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1597672242516" />
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1597320668274">
       <screen x="0" y="0" width="1280" height="800" />
