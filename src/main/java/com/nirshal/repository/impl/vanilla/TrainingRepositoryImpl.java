@@ -1,14 +1,15 @@
-package com.nirshal.repository.impl;
+package com.nirshal.repository.impl.vanilla;
 
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Sorts;
+import com.mongodb.client.result.DeleteResult;
 import com.nirshal.model.Training;
+import com.nirshal.repository.MongoDriver;
 import com.nirshal.repository.TrainingRepository;
 import com.nirshal.util.mongodb.MongoCollections;
 import com.nirshal.util.mongodb.MongoRepository;
 import com.nirshal.util.mongodb.MongoRepositoryCommonQueries;
 import com.nirshal.util.mongodb.Page;
-import lombok.Data;
 import org.bson.conversions.Bson;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@MongoDriver(MongoDriver.Type.VANILLA)
 @ApplicationScoped
 public class TrainingRepositoryImpl implements TrainingRepository {
 
@@ -54,8 +56,9 @@ public class TrainingRepositoryImpl implements TrainingRepository {
                 .into(new ArrayList<>());
     }
     @Override
-    public void deleteById(String id){
-        repo.deleteById(id);
+    public Boolean deleteById(String id){
+        DeleteResult result = repo.deleteById(id);
+        return result.getDeletedCount() > 0L;
     }
 
     @Override

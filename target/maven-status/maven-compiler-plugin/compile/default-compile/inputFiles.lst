@@ -1,12 +1,12 @@
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/TrainingInfo.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/panache/TrainingFileRepositoryImplPanache.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/excel/XLSOutputCell.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/services/util/FileContainer.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoItemClass.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/panache/TrainingFileRepo.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Training.java
-/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/TrainingFileRepositoryImpl.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollectionsIndexesProvider.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/data/formatting/Formatter.java
-/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/TrainingRepositoryImpl.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/services/TrainingService.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoRepositoryCommonQueries.java
@@ -19,9 +19,11 @@
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Lap.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/TrainingRepository.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/files/FilesLoaderService.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/panache/TrainingRepositoryImplPanache.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/TrainingFileRepository.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/data/formatting/SwimStrokeData.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/excel/Renderer.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/vanilla/TrainingRepositoryImpl.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/decoders/TrainingFileDecoder.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/data/formatting/UnitsType.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/rest/DateRangeParameters.java
@@ -29,6 +31,7 @@
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Length.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Record.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/TrainingFile.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/panache/TrainingRepo.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/Set.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollections.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/model/mappers/TrainingMapper.java
@@ -45,6 +48,8 @@
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoItem.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/data/formatting/SpeedUnit.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/containers/Table.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/MongoDriver.java
+/Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/repository/impl/vanilla/TrainingFileRepositoryImpl.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/rest/DevResource.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/rest/RestConstants.java
 /Users/alessandro.rossi/Documents/Sviluppo/java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/excel/StyleTypes.java

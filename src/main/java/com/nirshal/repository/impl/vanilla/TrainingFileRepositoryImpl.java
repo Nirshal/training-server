@@ -1,15 +1,16 @@
-package com.nirshal.repository.impl;
+package com.nirshal.repository.impl.vanilla;
 
-import com.nirshal.model.Training;
+import com.mongodb.client.result.DeleteResult;
 import com.nirshal.model.TrainingFile;
+import com.nirshal.repository.MongoDriver;
 import com.nirshal.repository.TrainingFileRepository;
 import com.nirshal.util.mongodb.MongoCollections;
 import com.nirshal.util.mongodb.MongoRepository;
-import lombok.Data;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
+@MongoDriver(MongoDriver.Type.VANILLA)
 @ApplicationScoped
 public class TrainingFileRepositoryImpl implements TrainingFileRepository {
 
@@ -33,8 +34,9 @@ public class TrainingFileRepositoryImpl implements TrainingFileRepository {
         repo.upsert(file);
     }
     @Override
-    public void deleteById(String id){
-        repo.deleteById(id);
+    public Boolean deleteById(String id){
+        DeleteResult result = repo.deleteById(id);
+        return result.getDeletedCount() > 0L;
     }
 
 }

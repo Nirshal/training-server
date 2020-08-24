@@ -194,5 +194,9 @@
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.20" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.06" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-mongodb-panache:1.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-panache-common:1.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-panacheql:1.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.8" level="project" />
   </component>
 </module>

@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
-
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
@@ -20,9 +19,6 @@ public class Page {
 
     public static final String ASC = "asc";
     public static final String DESC = "desc";
-
-//    @HeaderParam(RestConstants.HEADER_SOCIAL_BETTING_USER_ID)
-//    private String socialBettingUserId;
 
     /**
      * requested page (0 based)
@@ -62,17 +58,4 @@ public class Page {
     @DefaultValue("DESC")  // default DESC
     String sortDirection = "DESC";
 
-//    public int getElasticFrom() {
-//    	return this.page * this.itemPerPage;
-//    }
-//
-//
-//    public int getElasticTo() {
-//        return this.getElasticFrom() + this.itemPerPage;
-//    }
-//
-//
-//    public int getPageOffset() {
-//        return this.itemPerPage * this.page;
-//    }
 }
