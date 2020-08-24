@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.nirshal</groupId>
   <artifactId>training-server</artifactId>
@@ -10,6 +10,8 @@
     <maven.compiler.parameters>true</maven.compiler.parameters>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
+    <org.projectlombok.version>1.18.12</org.projectlombok.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus-plugin.version>1.7.0.Final</quarkus-plugin.version>
@@ -17,8 +19,6 @@
     <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
     <quarkus.platform.version>1.7.0.Final</quarkus.platform.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
-    <org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
-    <org.projectlombok.version>1.18.12</org.projectlombok.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -75,6 +75,12 @@
       <version>${org.mapstruct.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>${org.mapstruct.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
       <version>4.1.1</version>
@@ -88,7 +94,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-mongodb-panache</artifactId>
     </dependency>
-
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-container-image-docker</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -108,8 +117,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${compiler-plugin.version}</version>
         <configuration>
-          <source>11</source> <!-- depending on your project -->
-          <target>11</target> <!-- depending on your project -->
+          <source>11</source>
+          <target>11</target>
           <annotationProcessorPaths>
             <path>
               <groupId>org.mapstruct</groupId>
@@ -124,15 +133,6 @@
           </annotationProcessorPaths>
         </configuration>
       </plugin>
-<!--      <plugin>-->
-<!--        <artifactId>maven-surefire-plugin</artifactId>-->
-<!--        <version>${surefire-plugin.version}</version>-->
-<!--        <configuration>-->
-<!--          <systemProperties>-->
-<!--            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>-->
-<!--          </systemProperties>-->
-<!--        </configuration>-->
-<!--      </plugin>-->
     </plugins>
   </build>
   <profiles>
@@ -143,26 +143,7 @@
           <name>native</name>
         </property>
       </activation>
-      <build>
-        <plugins>
-<!--          <plugin>-->
-<!--            <artifactId>maven-failsafe-plugin</artifactId>-->
-<!--            <executions>-->
-<!--              <execution>-->
-<!--                <goals>-->
-<!--                  <goal>integration-test</goal>-->
-<!--                  <goal>verify</goal>-->
-<!--                </goals>-->
-<!--                <configuration>-->
-<!--                  <systemProperties>-->
-<!--                    <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>-->
-<!--                  </systemProperties>-->
-<!--                </configuration>-->
-<!--              </execution>-->
-<!--            </executions>-->
-<!--          </plugin>-->
-        </plugins>
-      </build>
+      <build />
       <properties>
         <quarkus.package.type>native</quarkus.package.type>
       </properties>

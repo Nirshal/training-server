@@ -1,12 +1,16 @@
 package com.nirshal.repository;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 
 @ApplicationScoped
 public class RepoConfigurator {
+
+    Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
     @Inject @MongoDriver(MongoDriver.Type.VANILLA)
     TrainingRepository vanillaTrainingRepository;
@@ -24,10 +28,10 @@ public class RepoConfigurator {
     @Produces
     TrainingRepository getTrainigRepo(){
         if (vanilla_mongo){
-            System.out.println("USING VANILLA MONGO");
+            logger.info("USING VANILLA MONGO");
             return vanillaTrainingRepository;
         } else {
-            System.out.println("USING PANACHE MONGO");
+            logger.info("USING PANACHE MONGO");
             return trainingRepository;
         }
     }
@@ -35,10 +39,10 @@ public class RepoConfigurator {
     @Produces
     TrainingFileRepository getTrainigFileRepo(){
         if (vanilla_mongo){
-            System.out.println("USING VANILLA MONGO");
+            logger.info("USING VANILLA MONGO");
             return vanillaFileRepository;
         } else {
-            System.out.println("USING PANACHE MONGO");
+            logger.info("USING PANACHE MONGO");
             return fileRepository;
         }
     }

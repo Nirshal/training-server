@@ -22,26 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="excluded">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/MongoDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/RepoConfigurator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/panache/TrainingFileRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/panache/TrainingFileRepositoryImplPanache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/panache/TrainingRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/panache/TrainingRepositoryImplPanache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/vanilla/TrainingRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/model/Training.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/TrainingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingFileRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/vanilla/TrainingFileRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/repository/impl/TrainingRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/services/impl/TrainingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/Dockerfile.jvm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile.jvm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
     </list>
@@ -85,7 +73,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample-data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/lib" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -104,11 +92,11 @@
       <recent name="com.nirshal.util.excel.renderers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/lib" />
       <recent name="$PROJECT_DIR$/sample-data" />
       <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/files" />
       <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel/renderers" />
       <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/excel" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.com.nirshal.repository.impl in training-server">
@@ -305,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598263916530</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable.">
+      <created>1598279093485</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1598279093485</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -343,7 +338,8 @@
     <MESSAGE value="Added the sample-data directory to gitignore" />
     <MESSAGE value="Added mongo index on training's creationDate." />
     <MESSAGE value="excluded" />
-    <option name="LAST_COMMIT_MESSAGE" value="excluded" />
+    <MESSAGE value="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable." />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable." />
   </component>
   <component name="WindowStateProjectService">
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318935106">
@@ -418,6 +414,10 @@
     </state>
     <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597751636763" />
     <state x="228" y="142" key="IDE.errors.dialog/0.0.1280.800@0.0.1280.800" timestamp="1597418859787" />
+    <state x="320" y="109" key="RollbackChangesDialog" timestamp="1598283585825">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="320" y="109" key="RollbackChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1598283585825" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1597411757850">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
