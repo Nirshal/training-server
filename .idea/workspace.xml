@@ -23,7 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Minor changes, playing around with docker.">
+      <change afterPath="$PROJECT_DIR$/info/graphQl_example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/GraphTrainingResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,10 +428,10 @@
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597312060914" />
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1597411757850" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598263996961">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598622432281">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597854594785" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1598622432281" />
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598263996961" />
     <state x="100" y="100" width="1080" height="600" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1597320668274">
       <screen x="0" y="0" width="1280" height="800" />
@@ -441,10 +446,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334368190" />
-    <state width="544" height="315" key="javadoc.popup.new" timestamp="1598284546166">
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1598622877332">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597853416600" />
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1598622877332" />
     <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1598284546166" />
     <state x="339" y="173" key="refactoring.ChangeSignatureDialog" timestamp="1597843596863">
       <screen x="0" y="0" width="1280" height="800" />

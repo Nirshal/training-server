@@ -1,0 +1,29 @@
+{
+  trainingsByDates(from: "2020-08-01T00:00:00", to: "2020-08-31T00:00:00" ){
+    id
+    sport
+    comments
+    description
+  }
+  training(trainingId: "916840519_3949850713"){
+    id
+    sport
+    creationDate
+    totalTime
+    totalDistance
+    device {
+      name
+      serial
+    }
+    laps{
+      distance
+      totalTimerTime
+      avgSpeed
+    }
+    records{
+      timestamp
+      positionLat
+      positionLong
+    }
+  }
+}
