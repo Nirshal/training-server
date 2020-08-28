@@ -22,16 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable.">
+    <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Minor changes, playing around with docker.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/docker/Dockerfile.jvm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nirshal/rest/TrainingsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/training-server.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598279093485</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Minor changes, playing around with docker.">
+      <created>1598284671440</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1598284671440</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,7 +338,8 @@
     <MESSAGE value="Added mongo index on training's creationDate." />
     <MESSAGE value="excluded" />
     <MESSAGE value="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable." />
+    <MESSAGE value="Minor changes, playing around with docker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes, playing around with docker." />
   </component>
   <component name="WindowStateProjectService">
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597318935106">
@@ -369,26 +369,26 @@
     </state>
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597744394558" />
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1598264014269" />
-    <state width="1238" height="189" key="GridCell.Tab.0.bottom" timestamp="1598275821583">
+    <state width="1238" height="189" key="GridCell.Tab.0.bottom" timestamp="1598285100215">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="283" key="GridCell.Tab.0.bottom/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597854415896" />
-    <state width="1238" height="189" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598275821583" />
-    <state width="1238" height="189" key="GridCell.Tab.0.center" timestamp="1598275821582">
+    <state width="1238" height="189" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598285100215" />
+    <state width="1238" height="189" key="GridCell.Tab.0.center" timestamp="1598285100211">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="283" key="GridCell.Tab.0.center/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597854415894" />
-    <state width="1238" height="189" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598275821582" />
-    <state width="1238" height="189" key="GridCell.Tab.0.left" timestamp="1598275821581">
+    <state width="1238" height="189" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598285100211" />
+    <state width="1238" height="189" key="GridCell.Tab.0.left" timestamp="1598285100208">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="283" key="GridCell.Tab.0.left/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597854415893" />
-    <state width="1238" height="189" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598275821581" />
-    <state width="1238" height="189" key="GridCell.Tab.0.right" timestamp="1598275821582">
+    <state width="1238" height="189" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598285100208" />
+    <state width="1238" height="189" key="GridCell.Tab.0.right" timestamp="1598285100212">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="283" key="GridCell.Tab.0.right/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597854415895" />
-    <state width="1238" height="189" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598275821582" />
+    <state width="1238" height="189" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598285100212" />
     <state width="1238" height="283" key="GridCell.Tab.1.bottom" timestamp="1597854415901">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -441,11 +441,11 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597334368190" />
-    <state width="544" height="315" key="javadoc.popup.new" timestamp="1598273270225">
+    <state width="544" height="315" key="javadoc.popup.new" timestamp="1598284546166">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800/-1920.0.1920.1080@0.0.1280.800" timestamp="1597853416600" />
-    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1598273270225" />
+    <state width="544" height="315" key="javadoc.popup.new/0.0.1280.800@0.0.1280.800" timestamp="1598284546166" />
     <state x="339" y="173" key="refactoring.ChangeSignatureDialog" timestamp="1597843596863">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
