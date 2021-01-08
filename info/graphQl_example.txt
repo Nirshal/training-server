@@ -1,3 +1,8 @@
+NOTE: graphiql endpoint is at:
+http://localhost:8080/graphql-ui/
+
+THIS IS A SAMPLE QUERY:
+
 {
   trainingsByDates(from: "2020-08-01T00:00:00", to: "2020-08-31T00:00:00" ){
     id

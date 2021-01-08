@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e667801-4c0d-4492-99b5-c8c53f23a9bf" name="Default Changelist" comment="Starting to play with graphQL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/graphQl_example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/info/graphQl_example.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="graphql" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -307,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598626651054</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added example files. Added postman collection to help in startup the project.">
+      <created>1610097075824</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610097075824</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,21 +356,26 @@
     <MESSAGE value="Introduced Mongo Panache version of all repositories.&#10;Also added the ability to switch between the two drivers using an application.properties variable." />
     <MESSAGE value="Minor changes, playing around with docker." />
     <MESSAGE value="Starting to play with graphQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting to play with graphQL" />
+    <MESSAGE value="Added example files. Added postman collection to help in startup the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added example files. Added postman collection to help in startup the project." />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1610038204285">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1610038204285" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1610096347726">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1610097083527">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1610096347726" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1610097083527" />
     <state x="384" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1610038116802">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="384" y="141" key="VcsDiffUtil.ChangesDialog/0.0.1280.800@0.0.1280.800" timestamp="1610038116802" />
+    <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1610097972135">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="391" y="296" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.800@0.0.1280.800" timestamp="1610097972135" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
