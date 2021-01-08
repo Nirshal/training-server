@@ -41,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="graphql" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.nirshal.repository.impl in training-server" />
         <item itemvalue="JUnit.com.nirshal.repository.impl in training-server" />
       </list>
     </recent_temporary>
@@ -354,10 +355,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800@0.0.1280.800" timestamp="1610038204285" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1610038596060">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1610096347726">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1610038596060" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1610096347726" />
     <state x="384" y="141" key="VcsDiffUtil.ChangesDialog" timestamp="1610038116802">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -367,12 +368,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb/MongoCollections.java</url>
+          <url>file://$PROJECT_DIR$/../../java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollections.java</url>
           <line>43</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nirshal/util/mongodb/MongoCollectionsIndexesProvider.java</url>
+          <url>file://$PROJECT_DIR$/../../java/IntelliJ/Nirshal/training-server/src/main/java/com/nirshal/util/mongodb/MongoCollectionsIndexesProvider.java</url>
           <line>19</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
